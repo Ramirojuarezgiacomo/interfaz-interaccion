@@ -124,14 +124,14 @@ body.bg-tp8 {
 
 @font-face {
   font-family: 'CyGrotesk';
-  src: url('../fonts/grotesk/CyGroteskStd-GrandDemi.woff2') format('woff2');
+  src: url('/fonts/grotesk/CyGroteskStd-GrandDemi.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Murs';
-  src: url('../fonts/MursGothic-WideDark.woff2') format('woff2');
+  src: url('/fonts/MursGothic-WideDark.woff2') format('woff2');
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
@@ -139,14 +139,14 @@ body.bg-tp8 {
 
 @font-face {
   font-family: 'Cosette';
-  src: url('../fonts/CossetteTitre-Bold.woff2') format('woff2');
+  src: url('/fonts/CossetteTitre-Bold.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Raela'; /* esta puede ser */
-  src: url('../fonts/grotesk/RaelaGrotesque-Black.woff2') format('woff2');
+  src: url('/fonts/grotesk/RaelaGrotesque-Black.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
