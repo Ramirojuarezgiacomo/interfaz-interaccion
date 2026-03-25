@@ -1,0 +1,3168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño de interfaz e interacción – Proyectos</title>
+  <link rel="stylesheet" href="../css/interfaz-interaccion.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+
+  <a class="back" id="regresar" href="https://ramirojuarezgiacomo.github.io/ux-ui-2026"
+    aria-label="Volver al portfolio">
+    <img class="back-icon" src="../img/regresar.png" alt="Volver al portfolio">
+  </a>
+
+
+
+  <main class="project-content">
+
+    <div class="panel-stage">
+
+      <div class="robot-container" id="robot">
+
+        <!-- ROBOT INICIO -->
+        <img src="../img/robot/robotsinmanitos.png" class="layer base">
+
+        <!-- ANIMACIÓN SALUDO -->
+        <img src="../img/robot/manitosaluda00.png" class="layer saludo" id="saludo">
+
+        <img src="../img/robot/manitoabajo.png" class="hand-front" id="handFront">
+
+        <!-- ESTADO CLICK (OCULTO) -->
+        <img src="../img/robot/robotojosfelices.png" class="layer happy" id="robotHappy">
+
+        <img src="../img/robot/manitosaluda00.png" class="layer handUp" id="handUp">
+
+        <img src="../img/robot/manoarribaizq.png" class="layer handUpLeft" id="handUpLeft">
+
+        <!-- CAJA TEXTO -->
+        <div class="robot-message" id="robotMessage">
+          ¿Seguís acá? Me agrada.
+          Todavía quedan cosas por descubrir.
+        </div>
+
+      </div>
+
+      <!-- HEADER -->
+      <div class="content-panel">
+        <header class="project-header">
+          <h1>Diseño de interfaz e interacción</h1>
+          <p class="subtitle">
+            UX/UI · Arquitectura de información · Interacción digital
+          </p>
+
+          <p class="meta">
+            Proyectos académicos orientados al análisis de interfaces,
+            diseño de experiencias y desarrollo de prototipos interactivos
+          </p>
+
+          <p class="role">
+            <strong>Herramientas:</strong> Investigación UX · Benchmarking ·
+            User personas · Wireframes · Prototipado en Figma ·
+            Diseño de componentes · Arquitectura de interacción
+          </p>
+
+          <!-- TABS -->
+          <div class="tabs">
+            <button class="tab-btn reciente active" onclick="openTab('tp0')">Cecropia Ritual Mortalis</button>
+            <button class="tab-btn" onclick="openTab('tp1')">Universo Cecropia</button>
+
+            <button class="tab-btn" onclick="openTab('tp2')">Infografía sobre la deepfake</button>
+            <button class="tab-btn" onclick="openTab('tp3')">Universo sensei</button>
+
+            <button class="tab-btn favorito" onclick="openTab('tp4')">IA y la modificación de imágenes</button>
+            <button class="tab-btn" onclick="openTab('tp5')">Infobae</button>
+
+            <button class="tab-btn favorito" onclick="openTab('tp6')">Indiehoy</button>
+            <button class="tab-btn" onclick="openTab('tp7')">Despintado</button>
+            <button class="tab-btn" onclick="openTab('tp8')">Minicare</button>
+          </div>
+        </header>
+
+        <!-- TP0 mortalis -->
+        <section id="tp0" class="tab-content">
+          <div class="text-block">
+
+            <div class="project-info">
+              <h2>Universo Cecropia – Ritual Mortalis</h2>
+
+              <p class="subtitle">
+                Creación de universo conceptual · Instalación multisensorial ·
+                Sistema interactivo con Arduino, luces y diseño sonoro
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo (7 integrantes) · Taller de Diseño · 2025
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Rol:</strong>
+                Desarrollo web · Integración Arduino · Sistema sonoro ·
+                Simulación digital del ritual · Construcción de instalación · Resolución de bugs en muestra ·
+                Coordinación técnica del equipo
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Experiencia interactiva</i>
+                <i>Diseño de interacción</i>
+                <i>Prototipado web</i>
+                <i>Sistemas multisensoriales</i>
+                <i>Testing en instalación real</i>
+              </p>
+            </div>
+
+            <div class="bloque-boceto">
+
+              <img src="../img/mortalis/portada.png" class="media-boceto zoomable"
+                style="height:500px; width:100%; max-height:none; max-width:none;">
+              <div class="texto-intro">
+                <h3>🔍📖 Contexto del proyecto</h3>
+                <p>
+                  Universo Cecropia es la expansión de un mundo conceptual previamente desarrollado en mi portfolio.
+                  En esta instancia exploramos el ritual central de la comunidad: Mortalis, la ceremonia realizada
+                  alrededor del Arbor Originis.</p>
+
+                <p><b>¿Qué ocurre en ese ritual?</b></p>
+                <p>Durante Mortalis, los cristales familiares se integran al Cristal Mayor de Memoria tras la muerte
+                  de Selen Aru, figura fundacional del universo.</p>
+
+                <p><b>¿Cómo se traduce eso en la instalación?</b></p>
+                <p>La instalación permitió que los participantes replicaran este ritual colocando cristales en la
+                  estructura. Cada interacción activaba una experiencia sensorial colectiva donde nuevas capas se
+                  sumaban al proceso de memoria compartida, combinando narrativa fantástica, materialidad orgánica y
+                  tecnología.
+                </p>
+                <br>
+                <p style="font-size: 12px; color:#d4d4d4">
+                  Para más información sobre el proyecto, realicé en dúo una documentación con procesos y materiales
+                  del equipo para la presentación académica:
+                  <a href="https://ramirojuarezgiacomo.my.canva.site/mortalis" target="_blank"
+                    style="font-size: 12px; color:#d4d4d4">explorar
+                    presentación</a>.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="bloque-boceto">
+
+              <div class="texto-intro">
+                <h3>Rol y contribuciones</h3>
+                <p><b>¿Cuál fue mi rol en el proyecto?</b></p>
+                <p>
+                  Participé en el desarrollo conceptual inicial y en la definición de la experiencia interactiva.
+                </p>
+
+                <p><b>¿También trabajé en la producción?</b></p>
+                <p>
+                  Sí. Asumí además un rol de articulación dentro del equipo, organizando tareas y redistribuyendo
+                  responsabilidades cuando surgían conflictos. También colaboré en la recaudación de fondos y en la
+                  construcción de la instalación.
+                </p>
+
+                <p><b>¿Qué implicó ese proceso?</b></p>
+                <p>
+                  Sostener simultáneamente desarrollo conceptual, programación, gestión de equipo y producción.
+                </p>
+
+              </div>
+
+              <img src="../img/mortalis/portada2.png" class="media-boceto"
+                style="height:500px; width:100%; max-height:none; max-width:none;">
+
+            </div>
+
+
+
+
+            <h3>Bocetos y planificación digital</h3>
+
+            <div class="fila-cards">
+              <!-- CARD 1 -->
+              <div class="card-boceto">
+                <div class="media-container mortalis-fix">
+
+                  <!-- CARRUSEL -->
+                  <div class="swiper mortalis-slider slider-cristal">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetowebcristal.png">
+                      </div>
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetowebcristal2.png">
+                      </div>
+                    </div>
+
+                    <!-- botones -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- puntitos -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+
+                <p><b>Bocetos de la web de cristales</b></p>
+
+                <p>
+                  Estos bocetos exploraban la estructura de navegación y la disposición
+                  de los cristales como sistema interactivo dentro del universo. Se ideó al inicio pensando
+                  en una infografía pero luego se cambió para hacerlo como minijuego de puzzle.
+                </p>
+
+                <a href="https://www.figma.com/proto/vuSgsww1yGUpCg5CNgpOXr/taller-3-soportes-webs?node-id=1-2&t=F3peU6ZIBk1Xq5R4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                  target="_blank" class="figma-link">
+                  🔗 Ver boceto interactivo
+                </a>
+
+              </div>
+
+
+              <!-- CARD 2 -->
+              <div class="card-boceto">
+                <div class="media-container">
+                  <img src="../img/mortalis/referencias.png" alt="Referencias visuales" class="media-boceto">
+                </div>
+                <p><b>Asistencia técnica y guía para la web de novela gráfica</b></p>
+                <p>
+                  Para asistir a una compañera en la construcción de su web de novela gráfica,
+                  preparé referencias visuales y una estructura base en HTML que le permitió
+                  comprender cómo trasladar el diseño al código.
+                </p>
+              </div>
+            </div>
+
+            <div class="fila-cards">
+              <!-- CARD 3 -->
+              <div class="card-boceto">
+                <div class="media-container">
+                  <iframe src="../docs/projects/mortalis/bocetowebprincipal.pdf" class="media-boceto">
+                  </iframe>
+                </div>
+                <p><b>Bocetos iniciales de la web principal</b></p>
+                <p>
+                  Boceto realizado en Canva para explorar la estructura inicial del sitio y
+                  la jerarquía de sus secciones. En esta etapa la web estaba pensada como una
+                  página informativa sobre plantas del libro de herbolaria; con el avance del
+                  proyecto la idea de “web principal” se redefinió y terminó transformándose
+                  en una página de anuncio de la muestra.
+                </p>
+              </div>
+
+
+              <div class="card-boceto">
+                <!-- CARD 4 -->
+                <div class="media-container">
+                  <!-- CARRUSEL -->
+                  <div class="swiper mortalis-slider slider-landing">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetoweb00.jpeg">
+                      </div>
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetoweb01.jpeg">
+                      </div>
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetoweb02.jpeg">
+                      </div>
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetoweb03.jpeg">
+                      </div>
+
+
+                      <div class="swiper-slide mortalis-slide">
+                        <img src="../img/mortalis/bocetoweb04.jpeg">
+                      </div>
+
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                </div>
+
+                <p><b>Bocetos exploratorios de landing page</b></p>
+
+                <p>
+                  En esta instancia se definió que la web debía funcionar como calendario de actividades, pero esa
+                  función pasó al rol de redes, por lo que estas ideas se descartaron. Se realizaron bocetos en Figma
+                  junto a una compañera para explorar posibles estructuras de landing page, aunque finalmente el grupo
+                  decidió que la web principal sería completamente ilustrada.
+                </p>
+
+
+              </div>
+            </div>
+
+            <div class="fila-cards">
+              <!-- CARD 5 -->
+
+              <div class="card-boceto">
+
+                <div class="media-container">
+                  <img src="../img/mortalis/bocetocontador.png" alt="Propuesta contador" class="media-boceto">
+                </div>
+                <p><b>Boceto de contador para web principal</b></p>
+                <p>
+                  Desarrollé un boceto de contador para la web principal, integrado visualmente al árbol con una
+                  estética natural. Su función era contar los días hasta la muestra y, al finalizar, revelar la fecha
+                  y el aula donde se realizaría la ceremonia, reforzando la sensación de espera antes de ingresar al
+                  universo Cecropia.
+                </p>
+              </div>
+
+              <div class="card-boceto">
+                <div class="media-container">
+                  <img src="../img/mortalis/demoprograma.PNG" alt="Propuesta contador" class="media-boceto">
+                </div>
+                <p><b>Boceto del proyecto final digital</b></p>
+                <p>En este boceto fue una interacción web para simular como sería las interacciones con el teclado
+                  mostrando
+                  de manera visual lo que ocurriría.
+                </p>
+
+                <p>CONTROLES: 1,2,3,4 cristales. a,b,c,d posición donde se quiere colocar.</p>
+
+                <a href="https://teisun01.github.io/versiones-anteriores/web20/index.html" target="_blank"
+                  class="figma-link">
+                  🌐 Probar simulación interactiva
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <h3>Planos y diseño estructural</h3>
+            <p>
+              La instalación fue diseñada a partir de planos estructurales que definían la
+              altura total, el radio de la base y la disposición de los cristales interactivos.
+              El árbol alcanzó aproximadamente dos metros de altura y fue construido para
+              permitir la participación simultánea de varias personas, organizando la
+              interacción de forma secuencial alrededor de la estructura.
+            </p>
+            <div style="display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap;">
+
+              <img src="../img/mortalis/plano-planta.PNG" alt="Plano en planta"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+              <img src="../img/mortalis/plano-explicativo.jpeg" alt="Plano explicativo"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+              <img src="../img/mortalis/maqueta.jpeg" alt="Maqueta pequeña"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+            </div>
+
+            <h3>Proceso de construcción e instalación</h3>
+            <p>
+              Durante la etapa de materialización participé activamente en la construcción del árbol y en la
+              resolución
+              espacial de la instalación. El trabajo incluyó la realización de troncos y ramas, corte y pegado de
+              materiales, pintura, creación de moldes y la integración de la corteza con los botones o cristales
+              interactivos. También trabajé en la definición del radio y la disposición entre los cristales para
+              asegurar una interacción cómoda para los participantes dentro del espacio. </p>
+            <p> La experiencia fue diseñada
+              para activar distintos sentidos del visitante mediante luces internas que respondían a la interacción,
+              capas sonoras progresivas que se armonizaban colectivamente, texturas orgánicas en la superficie del
+              árbol
+              y un aroma vegetal que reforzaba la atmósfera ritual de la instalación.
+            </p>
+
+            <p><b>Proceso del arbol</b></p>
+
+            <p>En el proceso del arbol se pintó de marron y se fue pegando con corteza y silicona hasta cubrir todo.
+              Participé activamente en la construcción estructural del árbol, corte y aplicación de
+              corteza, pintura, moldes y resolución espacial de los cristales.
+            </p>
+
+            <div class="media-row">
+
+              <img src="../img/mortalis/proceso/arbol/01.jpg" alt="Construcción de tronco" class="media-proceso">
+
+              <img src="../img/mortalis/proceso/arbol/03.jpg" alt="Construcción de tronco" class="media-proceso">
+
+
+              <video controls class="media-proceso">
+                <source src="../img/mortalis/proceso/arbol/02.mp4" type="video/mp4">
+              </video>
+
+
+            </div>
+
+            <p><b>Proceso de ramas y troncos</b></p>
+
+            <p> Se comenzo utilizando un cartón simulando la figura de una rama, utilizamos botellas de plastico
+              colocando tres como base dependiendo del grosor, en algunas solo se utilizó una, y el largo con más
+              botellas individuales rellenando los huecos con papel, luego se cubrio con papel film y cinta de
+              embalsar.
+              Al terminar, se colocaba cartapesta, para pintarla y luego pegarle con silicona los pedazos de corteza.
+            </p>
+
+
+            <div class="media-row">
+
+              <img src="../img/mortalis/proceso/troncos/00.jpg" class="media-proceso">
+
+              <video controls class="media-proceso">
+                <source src="../img/mortalis/proceso/troncos/01.mp4" type="video/mp4">
+              </video>
+
+              <img src="../img/mortalis/proceso/troncos/02.jpg" class="media-proceso">
+
+            </div>
+
+            <p>Luego de ya tener terminadas y esperan a que sequen se aprovecho de realizar ramas pequeñas para la
+              parte
+              superir del arbol, hecho con alambres y otros materiales que decidieron mi grupo.
+              Como base tiene una placa de madera facilitando que sea sencillo de montar y desmontar solo
+              desartornillando. Me encargue de pintar y colocar más corteza.</p>
+
+            <div style="display: flex; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+
+              <img src="../img/mortalis/proceso/ramasarriba/00.jpg" alt="Trabajo en ramas" alt="Instalación completa"
+                style="flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); height: auto; object-fit: cover; border-radius: 12px;">
+
+              <img src="../img/mortalis/proceso/ramasarriba/01.jpg" alt="Trabajo en ramas"
+                alt="Detalle del cristal central"
+                style="flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); height: auto; object-fit: cover; border-radius: 12px;">
+
+            </div>
+
+
+
+            <p><b>Proceso de botones y frutas</b></p>
+
+            <p>Se realizaron los moldes de los botones con cartón junto los cables de arduino y los cristales
+              verificando los tamaños, se hicieron huecos para que los cables puedan pasar bien. Se pintó y se cubrió
+              de
+              corteza. En cuanto las frutas del arbol, se realizaron un par de cada fruto. Me encargué de pintar el
+              color base. </p>
+
+
+            <div style="display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap;">
+
+              <img src="../img/mortalis/proceso/botones/00.jpg" alt="Trabajo en ramas"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+              <img src="../img/mortalis/proceso/botones/01.jpg" alt="Trabajo en ramas"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+              <img src="../img/mortalis/proceso/fruta.jpg" alt="Trabajo en ramas"
+                style="flex: 1; min-width: 250px; max-height: 400px; object-fit: cover;">
+
+            </div>
+            <h3>Sistema interactivo</h3>
+
+            <p>
+              La instalación funcionaba mediante cristales conectados a Arduino que activaban cambios de luz y capas
+              sonoras dentro del Arbor Originis. Cada interacción del público sumaba una nueva capa a la composición
+              colectiva del ritual.
+            </p>
+
+            <p>
+              En la etapa final implementé el sistema sonoro utilizando Processing, adaptando y optimizando los
+              archivos de audio desarrollados por una compañera para su funcionamiento en tiempo real. Durante la
+              muestra realicé pruebas de sonido, ajustes de volumen y monitoreo técnico para resolver fallos de
+              comunicación entre hardware y audio.
+            </p>
+
+            <!-- VIDEOS -->
+            <div style="display:flex; gap:24px; margin-top:30px; flex-wrap:wrap;">
+              <div style="flex:1; min-width:260px;">
+                <video controls style="width:100%; max-height:250px; border-radius:10px; object-fit:cover;">
+                  <source src="../videos/mortalis/pruebatecnica.mp4" type="video/mp4">
+                </video>
+
+                <p style="margin-top:10px;"><b>Prueba técnica del sistema</b></p>
+
+                <p style="font-size:14px;">
+                  Ensayo previo de integración entre Arduino, luces LED y sistema sonoro.
+                  Este test permitió verificar la respuesta de los cristales y ajustar la
+                  sincronización entre interacción física y sonido antes de la instalación final.
+                </p>
+
+              </div>
+
+
+              <div style="flex:1; min-width:260px;">
+
+                <video controls style="width:100%; max-height:250px; border-radius:10px; object-fit:cover;">
+                  <source src="../videos/mortalis/publico.mp4" type="video/mp4">
+                </video>
+
+                <p style="margin-top:10px;"><b>Interacción del público</b></p>
+
+                <p style="font-size:14px;">
+                  Durante la exhibición los visitantes podían participar del ritual
+                  colocando cristales en el árbol. Cada interacción activaba luces y
+                  capas sonoras que se acumulaban colectivamente.
+                </p>
+
+              </div>
+
+
+              <div style="flex:1; min-width:260px;">
+
+                <video controls style="width:100%; max-height:250px; border-radius:10px; object-fit:cover;">
+                  <source src="../videos/mortalis/finmuestra.mp4" type="video/mp4">
+                </video>
+
+                <p style="margin-top:10px;"><b>Registro final de la instalación</b></p>
+
+                <p style="font-size:14px;">
+                  Vista general del espacio expositivo y de la instalación completa
+                  del Arbor Originis dentro de la cabina ritual.
+                </p>
+
+              </div>
+
+            </div>
+
+            <h3>Resultado final de la instalación</h3>
+            <p>
+              El Arbor Originis funcionó como el núcleo de la experiencia ritual del universo. Los participantes
+              debían
+              colocar cristales en su estructura, activando progresivamente las luces internas y el sistema sonoro. A
+              medida que el árbol se completaba, la instalación respondía con cambios lumínicos y sonoros que marcaban
+              el avance colectivo del ritual, transformando la participación individual en una experiencia colectiva
+              dentro del universo Cecropia.
+            </p>
+
+            <div style="display: flex; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+
+              <img src="../img/mortalis/arbolcompleto.png" alt="Instalación completa"
+                style="flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); height: auto; object-fit: cover; border-radius: 12px;">
+
+              <img src="../img/mortalis/arbolcristal.png" alt="Detalle del cristal central"
+                style="flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); height: auto; object-fit: cover; border-radius: 12px;">
+
+            </div>
+
+            <h3>👓 Aprendizajes</h3>
+
+            <p>
+              Este proyecto implicó trabajar simultáneamente en dimensiones conceptuales, técnicas
+              y humanas. Más allá del diseño del universo y la interacción, el proceso exigió una
+              adaptación constante frente a imprevistos técnicos y organizativos.
+            </p>
+
+            <p>
+              La experiencia permitió integrar distintas áreas del diseño interactivo, combinando
+              diseño narrativo y construcción de universos con el desarrollo de experiencias
+              multisensoriales. También involucró programación web aplicada a proyectos conceptuales,
+              la integración entre software, hardware (Arduino) y sonido, así como la construcción
+              material de la instalación y la gestión de trabajo dentro de un equipo creativo.
+            </p>
+
+            <p>
+              Universo Cecropia no fue solo una instalación, sino la construcción de un sistema
+              narrativo, espacial y tecnológico que logró activarse colectivamente a través de
+              la participación del público.
+            </p>
+
+            <h3>Webs del proyecto</h3>
+
+            <!-- WEBS -->
+            <div class="web-grid">
+              <div class="web-card">
+                <video autoplay muted loop controls>
+                  <source src="../img/mortalis/mortaliswebcanva.mp4" type="video/mp4">
+                </video>
+                <p><b>Web del proyecto</b></p>
+                <p>
+                  Sitio desarrollado en Canva que documenta el universo Cecropia
+                  y el proceso del ritual Mortalis.
+                </p>
+
+                <a href="https://ramirojuarezgiacomo.my.canva.site/mortalis" target="_blank">
+                  Ver sitio →
+                </a>
+              </div>
+
+              <div class="web-card">
+                <video autoplay muted loop controls>
+                  <source src="../videos/mortalis/webprincipal.mp4" type="video/mp4">
+                </video>
+                <p><b>Web principal</b></p>
+
+                <p>
+                  Sitio desarrollado para anunciar cuando sería la muestra.
+                </p>
+
+                <a href="https://mortalisfda.github.io/0/">
+                  Visitar →
+                </a>
+              </div>
+
+
+              <div class="web-card">
+                <video autoplay muted loop controls>
+                  <source src="../videos/mortalis/webcristales.mp4" type="video/mp4">
+                </video>
+                <p> <b>Web de cristales</b></p>
+                <p>
+                  Sitio desarrollado para realizar un minijuego de los cristales para preparar a los usuarios
+                  a tener una referencia de cómo debe colocar los cristales. Al terminar revela el instragram
+                  de Selen.
+                </p>
+                <a href="https://mortalisfda.github.io/1/">
+                  Visitar →
+                </a>
+              </div>
+
+
+              <div class="web-card">
+                <video autoplay muted loop controls>
+                  <source src="../videos/mortalis/webnovela.mp4" type="video/mp4">
+                </video>
+                <p> <b>Web de novela gráfica</b></p>
+                <p>
+                  Sitio desarrollado para contar mediante ilustraciones la historia de las protagonistas.
+                </p>
+
+                <a href="https://mortalisfda.github.io/2/">
+                  Visitar →
+                </a>
+              </div>
+
+            </div>
+
+
+
+            <!-- PDFS -->
+            <div class="media-row media-row-2">
+              <div class="media-item">
+                <h3>Documentación</h3>
+                <div class="pdfs">
+                  <details>
+                    <summary>📄 Construcción del universo Cecropia</summary>
+                    <p class="pdf-subtitle">
+                      Documento inicial donde se desarrolla el universo ficticio de Cecropia.
+                      Se exploran las reglas del mundo, su relación con la naturaleza y el
+                      sistema de salud basado en plantas medicinales.
+                    </p> <a href="../docs/projects/mortalis/construccion-universo.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/mortalis/construccion-universo.pdf"></iframe>
+
+                  </details>
+
+                  <details>
+                    <summary>📄 Concepto del mundo y problemática</summary>
+                    <p class="pdf-subtitle">Investigación conceptual que plantea el origen del universo: una sociedad
+                      que,
+                      tras depender
+                      excesivamente de la inteligencia artificial, vuelve a la medicina natural y al trabajo comunitario
+                      para recuperar su salud y sus vínculos sociales.</p>
+                    <a href="../docs/projects/mortalis/concepto-problematica.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/mortalis/concepto-problematica.pdf"></iframe>
+                  </details>
+
+                  <details>
+                    <summary>📄 Exploración de eventos y rituales</summary>
+                    <p class="pdf-subtitle">
+                      Documento de ideación donde se exploran distintos eventos dentro del universo Cecropia, como
+                      rutinas diarias, cosechas y ceremonias comunitarias. Estas escenas ayudan a construir la cultura y
+                      las prácticas de la sociedad. </p>
+                    <a href="../docs/projects/mortalis/ideas-ritual.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/mortalis/ideas-ritual.pdf"></iframe>
+                  </details>
+
+                  <details>
+                    <summary>📄 Diseño narrativo del ritual Mortalis</summary>
+                    <p class="pdf-subtitle">
+                      Desarrollo del ritual central del proyecto. Se describe la ceremonia en honor a Selen Aru, los
+                      vínculos entre los participantes y los elementos simbólicos que construyen la experiencia
+                      multisensorial alrededor del Gran Árbol.</p>
+                    <a href="../docs/projects/mortalis/narracion-ritual.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/mortalis/narracion-ritual.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+
+              <!-- SONIDOS -->
+              <div class="media-item">
+
+                <h3>Sonidos del proyecto</h3>
+
+                <div class="audio-grid">
+
+                  <details>
+                    <summary>🎧 Música ambiente</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/ambiente.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/ambiente.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                  <details>
+                    <summary>🎧 Sonido del primer cristal</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/cristal1bis.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/cristal1bis.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                  <details>
+                    <summary>🎧 Sonido del segundo cristal</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/cristal2bis.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/cristal2bis.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                  <details>
+                    <summary>🎧 Sonido del tercer cristal</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/cristal3bis.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/cristal3bis.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                  <details>
+                    <summary>🎧 Sonido del cuarto cristal</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/cristal4bis.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/cristal4bis.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                  <details>
+                    <summary>🎧 Sonido de encastre (feedback)</summary>
+                    <audio controls preload="none">
+                      <source src="../audio/mortalis/sonido1inicio.wav" type="audio/wav">
+                    </audio>
+                    <a href="../audio/mortalis/sonido1inicio.wav" target="_blank">
+                      Abrir en una ventana →
+                    </a>
+                  </details>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </section>
+
+        <!-- TP1 cecropia -->
+        <section id="tp1" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Universo Cecropia</h2>
+
+              <p class="subtitle">
+                Creación de universo conceptual · Instalación multisensorial ·
+                Dispositivo interactivo con Arduino
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo (7 integrantes) · Taller de Diseño · 2025
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Rol:</strong> Desarrollo de materialidad · Investigación conceptual ·
+                Apoyo en programación y experiencia interactiva · Búsqueda de identidad
+                arquitectónica y sensorial · Aporte estratégico en construcción del universo
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Diseño de interacción física</i>
+                <i>Experiencia multisensorial</i>
+                <i>Mapeo de flujo de usuario</i>
+                <i>Prototipado de experiencia</i>
+                <i>Observación de usuarios en instalación real</i>
+              </p>
+            </div>
+
+            <div class="bloque-boceto-cecropia">
+              <img src="../img/cecropia/generalmuestra.jpg" class="media-boceto-cecropia">
+
+              <div class="texto-intro">
+                <h3>🔍📖 Sobre el proyecto</h3>
+
+                <p>
+                  Cecropia es un universo futurista que nace a partir de una crisis sanitaria y social: la dependencia
+                  excesiva de la tecnología y la pérdida de conexión con la naturaleza.
+                  <br>
+                  En este mundo, la medicina tradicional deja de ser efectiva debido a la resistencia bacteriana,
+                  lo que obliga a la humanidad a volver a las plantas, al cultivo propio y a una forma de vida más
+                  consciente y orgánica.
+                  <br>
+                  El proyecto comenzó como una construcción conceptual, pero evolucionó hasta convertirse en una
+                  instalación interactiva multisensorial presentada en una muestra.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <h3>Construcción del universo</h3>
+            <p>El universo fue desarrollado a partir de categorías sensoriales: vista, tacto, olfato, gusto y oído.
+              También trabajamos arquitectura, indumentaria, clima y naturaleza como un sistema integral.</p>
+
+            <div style="display: flex; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+
+              <img src="../img/cecropia/feed.jpeg"
+                style="flex: 1; min-width: 250px; max-height: 300px; object-fit: cover;">
+
+              <img src="../img/cecropia/moodboardfisico.png"
+                style="flex: 1; min-width: 250px; max-height: 300px; object-fit: cover;">
+
+              <img src="../img/cecropia/moodboard.png"
+                style="flex: 1; min-width: 250px; max-height: 300px; object-fit: cover;">
+
+            </div>
+
+            <p>
+              <b> En la exploración sensorial</b> las categorías sensoriales fueron desarrolladas visual y
+              materialmente,
+              explorando texturas, colores, aromas y estímulos físicos que luego
+              formaron parte de la instalación final.
+              La estética se aleja del futurismo tecnológico tradicional y propone un futuro orgánico. Se trabajaron
+              formas curvas, materiales naturales y una arquitectura inspirada en que la naturaleza forma parte central
+              de la vida cotidiana.
+              <br>
+              La intención fue construir un mundo coherente, donde cada elemento —desde la textura de la ropa hasta el
+              clima— respondiera a la misma lógica narrativa.
+            </p>
+
+            <h3>Ideación del dispositivo interactivo</h3>
+
+            <p>
+              El proyecto se materializó en un dispositivo interactivo programado con Arduino.
+              El sistema utilizaba sensores para detectar la interacción del usuario y activar
+              distintos estímulos dentro de la experiencia.
+
+              La actividad estaba pensada para realizarse en parejas: una persona introducía la
+              mano dentro del terrario sin poder ver el interior, mientras la otra observaba a
+              través de un orificio lateral y debía guiarla.
+
+              Dentro del terrario había frutos que debían colocarse sobre puntos de luz. Cuando
+              todos los puntos eran cubiertos correctamente, el sistema activaba un estímulo
+              final liberando un aroma dentro del dispositivo.
+            </p>
+
+            <p>
+              Durante el desarrollo también se realizaron distintos esquemas y diagramas para
+              definir la interacción del usuario, la lógica del sistema y la estructura física
+              del dispositivo. Estos materiales sirvieron como guía para planificar el
+              funcionamiento del artefacto y su construcción.
+            </p>
+
+
+            <div class="media-row">
+
+              <div class="media-item">
+                <img src="../img/cecropia/interaccion-usuario.jpg" style="width:100%; height:220px; object-fit:cover;">
+                <p><b>Interacción del usuario</b></p>
+                <p>
+                  La persona introduce su mano en el terrario sin ver el interior mientras otra observa y la guía.
+                  También muestra la altura del pedestal en relación al cuerpo del usuario.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/cecropia/flowchat.jpg" style="width:100%; height:220px; object-fit:cover;">
+                <p><b>Flujo de interacción</b></p>
+                <p>
+                  Diagrama que representa el recorrido que el usuario debe realizar
+                  y la secuencia de activación de los estímulos dentro del sistema.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/cecropia/plano.jpg" style="width:100%; height:220px; object-fit:cover;">
+                <p><b>Plano del dispositivo</b></p>
+                <p>
+                  Plano con las medidas generales del artefacto y la organización
+                  de sus partes para la construcción física.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/cecropia/disp00.png" style="width:100%; height:220px; object-fit:cover;">
+                <p><b>Esquema técnico</b></p>
+                <p>
+                  Diagrama que señala los sensores y componentes electrónicos
+                  utilizados dentro del dispositivo interactivo.
+                </p>
+              </div>
+
+
+            </div>
+
+            <h3>Modelado 3D del dispositivo</h3>
+
+            <p>
+              Para visualizar mejor cómo sería el dispositivo antes de su construcción,
+              realicé un modelo 3D preliminar que nos permitió discutir proporciones,
+              disposición de elementos y posibles recorridos de interacción.
+              El modelo no formaba parte obligatoria del proyecto, sino que lo desarrollé
+              como una herramienta de exploración para compartir con el equipo y tener
+              una referencia visual más clara del artefacto.
+            </p>
+
+            <div class="media-row media-row-3">
+
+              <div class="media-item">
+
+                <video controls style="width:100%; height:260px; object-fit:cover;">
+                  <source src="../videos/cecropia/modeloblender.mp4" type="video/mp4">
+                </video>
+
+                <p><b>Exploración del dispositivo en 3D</b></p>
+
+                <p>
+                  Modelo realizado por mí en Blender para visualizar la estructura del
+                  dispositivo, la cúpula y la distribución general de los elementos antes
+                  de comenzar la construcción física.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+
+                <model-viewer src="../videos/cecropia/cecropia.gltf" camera-controls auto-rotate
+                  style="width:100%; height:260px;">
+                </model-viewer>
+
+                <p><b>Modelo interactivo</b></p>
+
+                <p>
+                  Versión interactiva del modelo 3D que permite explorar el dispositivo
+                  desde distintos ángulos para entender su forma y organización espacial.
+                </p>
+
+              </div>
+
+
+              <div class="media-item">
+
+                <video controls style="width:100%; height:260px; object-fit:cover;">
+                  <source src="../videos/cecropia/modelo3d.mp4" type="video/mp4">
+                </video>
+
+                <p><b>Visualización del dispositivo completo</b></p>
+
+                <p>
+                  Representación final del proyecto generada a partir de imágenes mediante
+                  una herramienta web de reconstrucción 3D. Este modelo permitió mostrar
+                  una versión aproximada del resultado final con colores y composición
+                  general del dispositivo.
+                </p>
+
+              </div>
+
+
+
+            </div>
+
+            <h3>Desarrollo de materialidad</h3>
+
+            <p>Mi rol principal fue el desarrollo de la materialidad del universo, enfocándome en traducir el concepto
+              en decisiones físicas concretas.
+              <br>
+              Trabajé sobre cómo debía sentirse y verse este mundo en términos reales: qué materiales usar, cómo
+              resolver las uniones, cómo sostener los elementos y cómo lograr que lo orgánico no perdiera estabilidad
+              estructural.
+            </p>
+
+
+            <div class="media-row">
+
+              <div class="media-item">
+
+                <img src="../img/cecropia/cupulayeso.jpg"
+                  style="width:100%; height:220px; object-fit:cover; margin-bottom:0;">
+
+                <p><b>Construcción de la cúpula</b></p>
+
+                <p>Para la estructura principal realizamos una cúpula utilizando yeso como material base, tomando una
+                  forma circular plástica como molde. Luego la pintamos en tonos marrones para simular arcilla,
+                  reforzando la identidad orgánica del universo.
+
+                  Participé activamente en la construcción y acabado de esta pieza, buscando que la textura y el color
+                  transmitieran una sensación natural y artesanal.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+
+
+                <img src="../img/cecropia/tapamusgo.jpg"
+                  style="width:100%; height:220px; object-fit:cover; margin-bottom:0;">
+
+                <p><b>Sistema para flores y vegetación</b></p>
+
+                <p>Hubo complicaciones al colocar las flores, ya que era difícil unir plástico con yeso. Por eso propuse
+                  usar tapas de botellas como base, fijadas con tornillos.
+                  El sistema funcionó, así que cubrimos las tapas con musgo artificial hecho con esponjas cortadas y
+                  pintadas en tonos verdes y violetas.
+                  Esta solución combinó funcionalidad y estética, resolviendo un problema técnico sin perder coherencia
+                  visual con el proyecto.</p>
+
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/cecropia/tornilloluces.jpg"
+                  style="width:100%; height:220px; object-fit:cover; margin-bottom:0;">
+
+                <p><b>Iluminación interior</b></p>
+
+                <p>También me ocupé de pensar la iluminación interna de la cúpula.
+
+                  Propuse sujetar las tiras de luces mediante un sistema de tornillo central que permitiera enrollarlas
+                  en múltiples vueltas dentro de la estructura, asegurando una distribución uniforme de la luz.
+
+                  La intención era que el interior quedara bien iluminado sin que la fuente de luz fuera invasiva o
+                  visible desde el exterior.
+                </p>
+              </div>
+
+
+              <div class="media-item">
+                <img src="../img/cecropia/flores.jpg"
+                  style="width:100%; height:220px; object-fit:cover; margin-bottom:0;">
+
+                <p><b>Sistema práctico de encastre</b></p>
+
+                <p>La cúpula contiene musgo, tapas, flores y la pintura terminada. Diseñé el sistema para que las flores
+                  conservaran la rosca de la tapa, permitiendo encastrarlas simplemente girándolas en la base. Esto
+                  facilitaba desmontarlas sin dañar el yeso y permitía transportar la estructura con menor riesgo de
+                  rotura. La solución fue pensada desde lo práctico y la durabilidad.</p>
+
+              </div>
+            </div>
+
+
+            <div class="media-row">
+
+              <div class="media-item">
+
+                <video controls style="width:100%; height:260px; object-fit:cover; margin-bottom:0;">
+                  <source src="../img/cecropia/pilasluces.mp4" type="video/mp4">
+                </video>
+
+                <p><b>Iluminación exterior y detalles</b></p>
+
+                <p>
+                  Incorporé luces LED a pilas en el exterior, fijadas manualmente con cinta, para reforzar el
+                  carácter orgánico y generar un efecto decorativo por debajo de las flores.
+                  Aunque era un detalle pequeño, ayudó a darle más profundidad visual y presencia en la muestra.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+
+                <video controls style="width:100%; height:260px; object-fit:cover; margin-bottom:0;">
+                  <source src="../img/cecropia/olfato.mp4" type="video/mp4">
+                </video>
+
+                <p><b>Olfato y gusto</b></p>
+
+                <p>
+                  Realice pruebas de aroma mezclando elementos como romero, menta y alcohol hasta que el aroma de
+                  naranja con alcohol
+                  fue elegida ya que combinaba lo dulce y lo natural.
+                  En el gusto se hizo una tierra comestible de colores. A partir de
+                  esa base propuse incorporar golosinas (Bulldogs y Jelly Beans) para que el público pudiera
+                  interactuar.
+                </p>
+
+              </div>
+
+
+              <div class="media-item">
+
+                <video controls style="width:100%; height:260px; object-fit:cover; margin-bottom:0;">
+                  <source src="../img/cecropia/hojas.mp4" type="video/mp4">
+                </video>
+                <p><b>Lianas de hojas</b></p>
+
+                <p>
+                  Recorté pequeños fragmentos de papel que luego pinté en tonos verdes y oscuros, creando unas lianas
+                  buscando
+                  equilibrar la composición ya que visualmente el conjunto estaba quedando demasiado marrón intentando
+                  darle
+                  más vegetación.
+                  Finalmente no se utilizaron por decisión de los profesores, ya que el material se percibía
+                  claramente como papel.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/cecropia/agujeros.jpg"
+                  style="width:100%; height:260px; object-fit:cover; margin-bottom:0;">
+
+                <p><b>Sistema de piso y sensores</b></p>
+
+                <p>
+                  En prototipo se realizó un piso sin perforaciones y pequeño, lo que no funcionó. El equipo construyó
+                  finalmente la versión con agujeros, como había planteado en el inicio.
+
+                  Los sensores de luz del Arduino necesitaban que ingresara luz desde el suelo para activarse. Para
+                  evitar que los frutos se caigan, propuse una lámina de acetato como soporte.
+                </p>
+
+              </div>
+            </div>
+
+
+
+            <h3>👓 Reflexión y aprendizaje</h3>
+            <div class="media-row">
+              <div class="media-item">
+                <img src="/img/cecropia/muestra03.jpg" style="height:250px; object-fit:cover;">
+              </div>
+
+              <div class="media-item">
+                <p> <b>Trabajo colaborativo</b><br>
+                  Fue una experiencia importante de trabajo en equipo, donde fue necesario adaptarse a cambios y asumir
+                  responsabilidades en áreas distintas a las previstas. Aunque mi rol principal estaba vinculado al
+                  desarrollo de la materialidad, también participé en otras áreas del proyecto.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="/img/cecropia/muestra00.jpg" style="height:250px; object-fit:cover;">
+              </div>
+
+              <div class="media-item">
+                <p>
+                  <b>Construcción del universo Cecropia</b><br>
+                  A nivel personal, el proyecto me permitió experimentar cómo un concepto narrativo puede traducirse en
+                  decisiones materiales, técnicas y sensoriales. Uno de los aspectos que más me interesó fue el proceso
+                  de construir un universo coherente.
+                </p>
+              </div>
+
+            </div>
+            <div class="media-row">
+
+              <div class="media-item">
+                <img src="/img/cecropia/muestra01.JPG" style="height:250px; object-fit:cover;">
+              </div>
+
+              <div class="media-item">
+                <p>
+                  <b>Interacción entre participantes</b><br>
+                  Durante la muestra fue muy interesante observar cómo las personas interactuaban con el dispositivo. La
+                  experiencia estaba pensada para realizarse en parejas, y era gratificante ver sus reacciones y
+                  emociones, especialmente en quien introducía la mano sin poder ver.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="/img/cecropia/muestra02.jpg" style="height:250px; object-fit:cover;">
+              </div>
+
+              <div class="media-item">
+                <p>
+                  <b>Prototipado y aprendizaje</b><br>
+                  El proceso de construcción y prototipado fue clave para comprender cómo las ideas se transforman en
+                  experiencias concretas y cómo cada etapa del diseño contribuye a una experiencia significativa.
+                </p>
+              </div>
+
+            </div>
+
+
+            <h3>Documentación completa</h3>
+
+            <p class="docs-intro">
+              A continuación se incluyen algunos documentos utilizados durante el desarrollo
+              del proyecto, que muestran el proceso de investigación, construcción del
+              universo y diseño del dispositivo interactivo.
+            </p>
+
+            <div class="media-row media-row-2">
+
+              <div class="media-item">
+                <div class="pdfs">
+                  <details>
+
+
+                    <summary>📄 Exploración inicial del universo</summary>
+
+                    <p class="pdf-subtitle">
+                      Documento de ideación donde se exploran distintos escenarios posibles
+                      para el futuro de la humanidad. A partir de estas hipótesis se comienza
+                      a construir el punto de partida conceptual del universo Cecropia y su
+                      relación con la naturaleza, la tecnología y la medicina.
+                    </p>
+
+                    <a href="../docs/projects/cecropia/ideasuniverso.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/cecropia/ideasuniverso.pdf"></iframe>
+                  </details>
+
+
+                  <details>
+                    <summary>📄 Ficha del universo Cecropia</summary>
+
+                    <p class="pdf-subtitle">
+                      Documento de análisis donde se definen las bases del universo ficticio:
+                      contexto histórico, geolocalización, mensaje conceptual y características
+                      del entorno. Se describen aspectos como el ambiente, la alimentación,
+                      la arquitectura y el vínculo entre humanos, naturaleza y tecnología.
+                    </p>
+
+                    <a href="../docs/projects/cecropia/ficha.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/cecropia/ficha.pdf"></iframe>
+                  </details>
+
+
+                  <details>
+                    <summary>📄 Propuesta conceptual del universo Cecropia</summary>
+
+                    <p class="pdf-subtitle">
+                      Desarrollo conceptual del universo donde se profundiza en la experiencia
+                      multisensorial del entorno. El documento explora cómo el tacto, el olor,
+                      el sonido y el gusto forman parte de la vida cotidiana dentro de este
+                      mundo basado en plantas medicinales y conexión con la naturaleza.
+                    </p>
+
+                    <a href="../docs/projects/cecropia/cecropiapropuesta.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/cecropia/cecropiapropuesta.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+              <div class="media-item">
+                <div class="pdfs">
+                  <details>
+                    <summary>📄 Diseño del dispositivo multisensorial</summary>
+
+                    <p class="pdf-subtitle">
+                      Documento técnico que explica el diseño del dispositivo interactivo
+                      desarrollado para representar el universo Cecropia. Incluye el uso de
+                      sensores, iluminación, aromas y programación con Arduino para generar
+                      una experiencia multisensorial vinculada al cultivo de plantas.
+                    </p>
+
+                    <a href="../docs/projects/cecropia/dispositivo.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/cecropia/dispositivo.pdf"></iframe>
+                  </details>
+
+
+                  <details>
+                    <summary>📄 Presentación final del proyecto Cecropia</summary>
+
+                    <p class="pdf-subtitle">
+                      Documento de entrega final del trabajo práctico donde se sintetiza el
+                      universo Cecropia y su desarrollo conceptual. Incluye descripciones del
+                      entorno, arquitectura, clima, indumentaria, experiencias sensoriales y
+                      registros del proceso del proyecto.
+                    </p>
+
+                    <a href="../docs/projects/cecropia/final.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/cecropia/final.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
+        <!-- TP2 deepfake -->
+        <section id="tp2" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Cinépolis</h2>
+
+              <p class="subtitle">
+                Instalación interactiva · Infografía lúdica · Trivias sobre Deepfake
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo · Taller de Diseño para la Web · 2024
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong> Diseño UX/UI · Sistema de componentes ·
+                Diseño de interacción y feedback · Organización visual y grillas ·
+                Coordinación del diseño del proyecto · Testing de experiencia ·
+                Resolución técnica en contexto real
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Arquitectura de información</i>
+                <i>Diseño de interacción</i>
+                <i>Sistema de componentes</i>
+                <i>Prototipado en Figma</i>
+                <i>Feedback y estados de interfaz</i>
+                <i>Testing en instalación real</i>
+              </p>
+            </div>
+
+            <div class="media-row media-row-3">
+
+              <div class="media-item">
+                <div class="icon-block">
+                  <span class="icon">🎬</span>
+                  <h3>Contexto y objetivo</h3>
+                  <p>Instalación interactiva tipo cabina de cine que informa y genera reflexión sobre Deepfake en el
+                    cine.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media-item">
+                <div class="icon-block">
+                  <span class="icon">🎮</span>
+                  <h3>Concepto de experiencia</h3>
+                  <p>Menú interactivo no lineal. El usuario aprende mediante actividades como trivias y juegos
+                    interactivos.</p>
+                </div>
+              </div>
+
+              <div class="media-item">
+                <div class="icon-block">
+                  <span class="icon">🧩</span>
+                  <h3>Núcleos interactivos</h3>
+                  <p> Cinco núcleos sobre diferentes aspectos del Deepfake. Los usuarios exploran libremente con botones
+                    numéricos.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <h3>Componentes</h3>
+            <p>
+              Se diseñaron distintos componentes interactivos para guiar el recorrido
+              del usuario dentro de la experiencia. Entre ellos se incluyen trivias,
+              preguntas de verdadero o falso, carruseles informativos y selección
+              visual de imágenes (deepfake vs originales). Cada componente busca
+              reforzar el aprendizaje mediante la interacción y mantener una
+              navegación dinámica dentro de los distintos núcleos de contenido.
+            </p>
+            <div class="media-row media-row-3">
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente00.png" alt="Componentes interactivos">
+                <p>Trivias donde el usuario debe adivinar con información ya dada anteriormente. Se evalua al usuario si
+                  ha entendido el contenido informativo. </p>
+              </div>
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente01.png" alt="Componentes interactivos">
+                <p>Figuras famosas con datos despegable en el lateral, se agrandan a medida que avanzas, permite que el
+                  usuario se ubique, los inactivos se vuelven a su estado inicial.</p>
+              </div>
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente02.png" alt="Componentes interactivos">
+                <p>Pregunta con respuesta interactiva para evaluar al usuario o desafiar si ha entendido el contenido
+                  informativo del núcleo.</p>
+              </div>
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente03.png" alt="Componentes interactivos">
+                <p>Recurso de carrusel para moverse mediante los botones mientras se muestra información arriba del
+                  carrusel por cada tema elegido.</p>
+              </div>
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente04.png" alt="Componentes interactivos">
+                <p>Pequeño cartel en el inicio de cada nucleo donde da un mini instrutivo de los controles.</p>
+              </div>
+              <div class="media-item">
+                <img src="../img/deepfake/componentes/componente05.png" alt="Componentes interactivos">
+                <p>Orden de información en una claqueta, gif de muestra y una ruleta interactiva con animaciones donde
+                  va girando con distintos temas moviendo con los botones a la izquierda o derecha.</p>
+              </div>
+            </div>
+
+
+            <h3>Feedback</h3>
+
+            <p>
+              Las interacciones incorporan distintos tipos de feedback visual para
+              confirmar las acciones del usuario y reforzar la comprensión del
+              contenido. Se utilizan indicadores de correcto o incorrecto,
+              mensajes visuales, cambios de estado y animaciones que guían el
+              avance dentro de cada núcleo y comunican cuándo una actividad fue
+              completada.
+            </p>
+            <div class="media-row media-row-3">
+              <div class="media-item">
+                <img src="../img/deepfake/feedback/feedback00.png" alt="Feedback visual">
+                <p>Feedback de correcto o incorrecto, permitiendo saber al usuario si se ha equivocado o acertado. Con
+                  iconografia visual y colores distintivos.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/deepfake/feedback/feedback01.png" alt="Feedback visual">
+                <p>Feedback de ilustración con mensaje de felicidades o contención permitiendo que el usuario se informe
+                  si ha acertado o equivocado.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/deepfake/feedback/feedback02.png" alt="Feedback visual">
+                <p>Secuencia animada de flechas que inicia inactiva. El usuario no puede avanzar hasta completar el
+                  núcleo. Una vez finalizado, la flecha se activa con mayor opacidad y una animación indicando que ya
+                  puede continuar.</p>
+              </div>
+            </div>
+
+            <div class="media-row media-row-2">
+              <div class="media-item">
+                <img src="../img/deepfake/feedback/feedback03.png" alt="Feedback visual">
+                <p>Diseño con enfoque visual del cine con butacas, pensado en utilizar porcentajes, pregunta y
+                  adivinanza.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/deepfake/feedback/feedback04.png" alt="Feedback visual">
+                <p>Pregunta para que el usuario de su opinión y se le otorgue un porcentaje e información de demás
+                  usuarios que han votado.</p>
+              </div>
+            </div>
+
+
+
+            <div class="bloque-boceto-deepfake">
+
+              <video class="media-boceto-deepfake video" controls>
+                <source src="../videos/deepfake/preparacion.mp4" type="video/mp4">
+              </video>
+
+              <div class="texto-intro">
+
+                <h3 style="margin-bottom: 0; margin-top: 0;">🛠️ Resolución de problemas</h3>
+                <p> Durante la muestra, los sensores (teclas de la computadora) eran demasiado sensibles y
+                  provocaban múltiples activaciones al presionarlos. Sin acceso al código original ya que no era mi rol,
+                  implementé un script en AutoHotkey que detecta cada pulsación y agrega un retardo de 3 segundos,
+                  eliminando la sensibilidad excesiva y garantizando el correcto funcionamiento de la experiencia.</p>
+              </div>
+
+            </div>
+
+
+
+            <div class="bloque-boceto-deepfake">
+
+              <img src="../img/deepfake/promocion.jpeg" alt="Promoción del proyecto Cinépolis durante la muestra"
+                class="media-boceto-deepfake">
+
+              <div class="texto-intro">
+
+                <h3 style="margin-bottom:0;margin-top:0;">🍿 Promoción</h3>
+
+                <p>
+                  Para generar interés durante la muestra propuse una pequeña estrategia para promocionar.
+                  El equipo utilizó vestimenta temática (vestimenta roja y vinchas de pochoclos) para
+                  llamar la atención del público mientras recorríamos la institución.
+                </p>
+
+                <p>
+                  La idea era generar curiosidad visual antes de que las personas vieran la instalación.
+                  Esto funcionó como una forma simple de promoción: muchas personas se acercaban a
+                  preguntar de qué se trataba el proyecto.
+                </p>
+
+                <p>
+                  También se repartieron pequeñas bolsitas de pochoclos y stickers para reforzar el concepto
+                  de cabina de cine y atraer visitantes hacia la experiencia.
+                </p>
+
+              </div>
+            </div>
+
+
+
+            <div class="bloque-boceto-deepfake">
+
+              <img src="../img/deepfake/instalacion.jpeg" alt="Instalación interactiva Cinépolis durante la muestra"
+                class="media-boceto-deepfake">
+              <div class="texto-intro">
+                <h3 style="margin-bottom: 0; margin-top: 0;">☝🤓 Aprendizajes del proyecto</h3>
+                <p>
+                  Este proyecto implicó diseñar una experiencia interactiva pensada para un contexto físico real,
+                  combinando arquitectura de información, diseño de interacción y componentes lúdicos
+                  para explicar el fenómeno del deepfake de forma accesible. Durante el proceso también
+                  fue necesario adaptarse a situaciones propias de una instalación en exhibición, resolviendo
+                  problemas técnicos y ajustando la experiencia para garantizar su funcionamiento durante la muestra.
+                  Más allá de la interfaz, el proyecto permitió pensar la interacción como parte de una experiencia
+                  espacial y participativa, donde el público descubre y explora los contenidos a través del juego y
+                  la participación directa.
+                </p>
+              </div>
+            </div>
+
+            <h3>Documentación completa</h3>
+            <p>
+              A continuación se incluyen algunos documentos utilizados durante el desarrollo del proyecto.
+              Estos materiales muestran el proceso de investigación, conceptualización y planificación de la instalación
+              interactiva.
+            </p>
+
+            <div class="project-resources">
+
+              <!-- DOCUMENTOS-->
+              <div class="resource-card">
+
+                <p class="resource-title">📄 Documentación</p>
+
+                <p class="resource-text">
+                  Documentos de investigación, conceptualización y planificación de la instalación interactiva.
+                </p>
+                <div class="pdfs">
+                  <details>
+                    <summary>Propuesta conceptual</summary>
+                    <p class="pdf-subtitle">
+                      Documento inicial donde se desarrolla la idea del proyecto <strong>Cinépolis</strong>, una cabina
+                      de
+                      cine interactiva pensada para informar y generar reflexión sobre el uso del deepfake en la
+                      industria
+                      cinematográfica.
+                      En este material se explica la propuesta de valor de la instalación y cómo la experiencia
+                      interactiva permite abordar el tema de forma más inmersiva que una página web tradicional.
+                    </p>
+                    <a href="../docs/projects/deepfake/deepfake.pdf" target="_blank">Abrir PDF</a>
+                    <br>
+                    <iframe src="../docs/projects/deepfake/deepfake.pdf"></iframe>
+                  </details>
+
+                  <details>
+
+                    <summary>Guía de presentación</summary>
+                    <p class="pdf-subtitle">
+                      Documento de planificación utilizado para organizar la presentación del proyecto.
+                      Incluye la definición del tema, los objetivos de la experiencia interactiva, la descripción de los
+                      cinco núcleos de información y el mapa de navegación que estructura el recorrido del usuario
+                      dentro
+                      de la instalación.
+                    </p>
+
+                    <p class="pdf-subtitle">
+                      También se detallan aspectos del público objetivo, el concepto de interfaz física y las posibles
+                      acciones que realiza el usuario durante la experiencia.
+                    </p>
+                    <a href="../docs/projects/deepfake/guia-presentacion.pdf" target="_blank">Abrir PDF</a>
+                    <br>
+                    <iframe src="../docs/projects/deepfake/guia-presentacion.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+
+
+              <!-- UNITY -->
+              <div class="resource-card">
+                <p class="resource-title">🕹️ Experiencia Unity</p>
+                <p class="resource-text">
+                  El proyecto fue desarrollado en Unity como una experiencia interactiva funcional para su uso en
+                  contexto físico.
+                </p>
+                <a class="figma-link"
+                  href="https://drive.google.com/drive/folders/1fj5a68F4gDQrEPzWCH89z4goYhmfOxzF?usp=drive_link"
+                  target="_blank">
+                  ⬇️ Descargar ejecutable
+                </a>
+              </div>
+
+
+              <!-- FIGMA -->
+              <div class="resource-card">
+
+                <p class="resource-title">🎨 Prototipos Figma</p>
+
+                <p class="resource-text">
+                  El proyecto fue prototipado en Figma mediante cinco núcleos independientes, activados de forma
+                  individual para simular la instalación física.
+                </p>
+
+                <div class="figma-grid-full">
+                  <a href="https://www.figma.com/proto/1BgOQYtw0F0092blOV6KBo/ramirojuarezgiacomo-ultimo?node-id=4-3394&t=ceY29rZkTuICdxXE-1"
+                    target="_blank"><span class="link-icon">1️⃣</span> CGI</a>
+                  <a href="https://www.figma.com/proto/1BgOQYtw0F0092blOV6KBo/ramirojuarezgiacomo-ultimo?node-id=4-3577&t=DG4VSY2I2tJvQcYL-1"
+                    target="_blank"><span class="link-icon">2️⃣</span> ¿Qué es y cómo funciona?</a>
+                  <a href="https://www.figma.com/proto/1BgOQYtw0F0092blOV6KBo/ramirojuarezgiacomo-ultimo?node-id=4-5266&t=qTSVsQxs89qrNohe-1"
+                    target="_blank"><span class="link-icon">3️⃣</span> Uso de Deepfake</a>
+                  <a href="https://www.figma.com/proto/1BgOQYtw0F0092blOV6KBo/ramirojuarezgiacomo-ultimo?node-id=4-4150&t=N1nPg8iFXwdapzzF-1"
+                    target="_blank"><span class="link-icon">4️⃣</span> Herramientas</a>
+                  <a href="https://www.figma.com/proto/1BgOQYtw0F0092blOV6KBo/ramirojuarezgiacomo-ultimo?node-id=4-5626&t=w4hSYTupbm3Cpt9J-1"
+                    target="_blank" class="center-link"><span class="link-icon">5️⃣</span> La huelga de actores</a>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </section>
+
+        <!-- TP3 sensei -->
+        <section id="tp3" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Universo Sensei</h2>
+
+              <p class="subtitle">
+                Experiencia interactiva · Meditación · Concentración · Juego sensorial
+              </p>
+
+              <p class="meta">
+                Proyecto grupal (3 integrantes) · Desarrollo en Unity · 2024
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong>
+                Programación completa en Unity · Diseño de interacción ·
+                Integración de ilustraciones · Implementación de sonido ·
+                Gestión de estados del personaje · Ajustes técnicos y animación
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Diseño de interacción</i>
+                <i>Sistemas de estados del usuario</i>
+                <i>Feedback visual y sonoro</i>
+                <i>Prototipado conceptual</i>
+                <i>Diseño de experiencia exploratoria</i>
+                <i>Implementación interactiva en Unity</i>
+              </p>
+            </div>
+
+
+            <div class="bloque-boceto-sensei">
+
+              <img src="../img/sensei/sensei-feliz.png" class="media-boceto-sensei">
+              <div class="texto-intro">
+                <h3>🔍📖 Concepto de la experiencia</h3>
+                <p>
+                  <strong>Universo Sensei</strong> es una experiencia interactiva desarrollada en el marco de un trabajo
+                  práctico grupal, cuyo eje conceptual gira en torno a la <strong>concentración, la meditación y la
+                    distracción</strong>.
+                </p>
+
+                <p>
+                  El usuario interactúa con un <strong>sensei</strong> ubicado en un entorno tipo dojo. El personaje
+                  intenta mantener su concentración mientras el usuario puede tocar distintos elementos del entorno.
+
+                  Algunas interacciones favorecen la calma del sensei mientras que otras generan distracción o
+                  frustración.
+                  No existe una guía explícita: el aprendizaje se produce mediante exploración y prueba y error.
+                </p>
+                <a class="figma-link" href="https://ramirojuarezg.itch.io/capelettinis" target="_blank">
+                  🎮 Probar la experiencia
+                </a>
+              </div>
+
+            </div>
+
+            <div class="bloque-boceto-sensei">
+
+              <div class="texto-intro">
+                <h3>🎨 Proceso y desarrollo</h3>
+                <p>
+                  El proyecto comenzó con una etapa de ideación y bocetado donde se definieron los estados emocionales
+                  del personaje, los objetos interactivos y las reglas del sistema. A partir de estos esquemas se
+                  crearon wireframes y prototipos para organizar la lógica de interacción.
+                </p>
+
+                <p>
+                  El desarrollo final se realizó en <strong>Unity</strong>. Me encargué de la programación del sistema
+                  interactivo, incluyendo la detección de interacciones, la gestión de estados del personaje, la
+                  sincronización de animaciones y la integración del sonido.
+                </p>
+
+                <p>
+                  El proyecto se realizó en colaboración con una ilustradora responsable de los elementos visuales,
+                  mientras que un tercer integrante participó en el armado inicial de algunas secuencias.
+                </p>
+
+                <div class="figma-links">
+                  <a class="figma-link"
+                    href="https://www.figma.com/proto/8kegCoYLUF1MHklNfgxaUY/sensei-wireframe?node-id=1-132&p=f&t=Czylgphi07WyngE3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                    target="_blank">
+                    🔗 Primer boceto prototipo
+                  </a>
+
+                  <a class="figma-link"
+                    href="https://www.figma.com/proto/HzsMXPhCjwS5dpRV3wulPL/ilustracion-lmm2?node-id=1-2&t=rsBrmyJWRsJ3crQd-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+                    target="_blank">
+                    🔗 Segundo boceto prototipo
+                  </a>
+                </div>
+              </div>
+
+              <img src="../img/sensei/bocetos.jpg" alt="Bocetos y wireframes iniciales" class="media-boceto-sensei">
+            </div>
+
+
+
+            <h3>Objetos interactivos del entorno</h3>
+            <p>
+              La experiencia utiliza objetos interactivos que modifican el estado del sensei.
+
+              Estos elementos son reutilizables y permiten una interacción libre, sin un recorrido único.
+            </p>
+
+
+            <div class="media-row media-row-3">
+
+              <div class="media-item">
+
+                <img src="../img/sensei/objetos/neutro/objetosneutro.png" alt="Entorno interactivo del dojo">
+
+                <p><b>Objetos del entorno neutral</b></p>
+
+                <p>
+                  Elementos del entorno del dojo que no alteran el estado del personaje.
+                  Funcionan como parte de la ambientación y construyen el espacio interactivo.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/sensei/objetos/meditacion/meditacion.png" alt="Entorno interactivo del dojo">
+
+                <p><b>Objetos de meditación</b></p>
+
+                <p>
+                  Elementos asociados a la concentración del sensei.
+                  Al interactuar con ellos, el personaje recupera
+                  el equilibrio y el foco dentro del entorno.
+                </p>
+
+              </div>
+
+
+              <div class="media-item">
+
+                <img src="../img/sensei/objetos/desconcentracion/desconcentracion.png"
+                  alt="Entorno interactivo del dojo">
+
+                <p><b>Objetos de distracción</b></p>
+
+                <p>
+                  Objetos que interrumpen la calma del dojo y afectan la concentración del personaje,
+                  generando reacciones de frustración o pérdida de foco.
+                </p>
+
+              </div>
+            </div>
+
+            <h3>Feedback e interacción</h3>
+            <p>
+              El sistema de feedback hace que cada acción del usuario genere una respuesta visual y sonora.
+              En lugar de cambios abruptos, el personaje evoluciona progresivamente según cómo el usuario interactúa con
+              los objetos del entorno.
+            </p>
+
+
+            <div class="media-row media-row-3">
+
+              <div class="media-item">
+
+                <img src="../img/sensei/escenario-neutro.png" alt="Entorno interactivo del dojo">
+
+                <p><b>Estado inicial del entorno.</b></p>
+
+                <p>
+
+                  El sensei se encuentra en equilibrio y el dojo mantiene una ambientación tranquila.
+
+                </p>
+
+
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/sensei/escenario-meditacion.png" alt="Entorno interactivo del dojo">
+
+                <p><b>Estado de meditación</b></p>
+
+                <p>
+                  Cuando el usuario interactúa con el instrumento, el entorno refuerza la concentración del personaje.
+                  El sensei se relaja y el ambiente transmite una sensación de trance.
+                </p>
+
+              </div>
+
+
+              <div class="media-item">
+
+                <img src="../img/sensei/escenario-desconcentracion.png" alt="Entorno interactivo del dojo">
+
+                <p><b>Estado de distracción</b></p>
+
+                <p>
+                  Si el usuario activa objetos que interrumpen la calma del dojo, el personaje pierde su concentración.
+                  Las animaciones y el entorno reflejan este cambio mostrando un momento de tensión en la escena.
+                </p>
+
+              </div>
+            </div>
+            <div class="bloque-boceto-sensei" style="margin-top:0">
+
+              <div class="texto-intro">
+
+                <h3>👓 Aprendizajes</h3>
+                <p>
+                  Este proyecto implicó desarrollar una experiencia interactiva donde conceptos abstractos como
+                  la concentración, la calma y la distracción se comunican mediante animación, sonido y diseño de
+                  interacción.</p>
+                <p>
+                  El desafío fue construir un sistema donde las acciones del usuario generaran respuestas claras
+                  del personaje, integrando programación, lógica de estados y trabajo con el área de ilustración
+                  para dar forma al entorno.
+                </p>
+
+
+
+              </div>
+
+              <img src="../img/sensei/shamisen.png" alt="Bocetos y wireframes iniciales" class="media-boceto-sensei">
+
+
+            </div>
+
+            <h3>Documentación y prototipos</h3>
+            <div class="media-row media-row-2">
+              <div class="media-item">
+                <!-- DOCUMENTOS -->
+                <div class="pdfs">
+                  <details>
+                    <summary>📄 Ideación y concepto</summary>
+                    <a href="../docs/projects/sensei/ideacion.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/sensei/ideacion.pdf"></iframe>
+                  </details>
+
+                  <details>
+                    <summary>📄 Desarrollo y sistema interactivo</summary>
+                    <a href="../docs/projects/sensei/desarrollo.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/sensei/desarrollo.pdf"></iframe>
+                  </details>
+
+                  <details>
+                    <summary>📄 Concepto de experiencia interactiva</summary>
+                    <a href="../docs/projects/sensei/concepto-experiencia.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/sensei/concepto-experiencia.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+              <div class="media-item">
+                <!-- DOCUMENTOS -->
+                <div class="pdfs">
+                  <details>
+                    <summary>📄 Boceto y propuesta estética de la pieza interactiva</summary>
+                    <a href="../docs/projects/sensei/boceto-propuesta.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/sensei/boceto-propuesta.pdf"></iframe>
+                  </details>
+                </div>
+
+                <a class="figma-link" href="https://ramirojuarezg.itch.io/capelettinis" target="_blank">
+                  🎮 Probar la experiencia
+                </a>
+
+              </div>
+            </div>
+
+        </section>
+
+        <!-- TP4 ia -->
+        <section id="tp4" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Infografía interactiva sobre Inteligencia Artificial</h2>
+
+              <p class="subtitle">
+                Storytelling interactivo · Micro-interacciones · Sistema de componentes
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo (4 integrantes) · Taller de Diseño para la Web · 2024
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong> Diseño UX/UI · Arquitectura de la experiencia ·
+                Sistema de componentes · Diseño de interacción y feedback visual ·
+                Micro-animaciones y señales de acción · Estados del personaje ·
+                Grillas y jerarquía visual · Coordinación y guía conceptual del equipo ·
+                Apoyo en desarrollo
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Arquitectura de información</i>
+                <i>Storytelling interactivo</i>
+                <i>Sistema de componentes</i>
+                <i>Diseño de micro-interacciones</i>
+                <i>Prototipado en Figma</i>
+                <i>Experiencia de exploración por scroll</i>
+              </p>
+            </div>
+
+
+            <div class="bloque-boceto-infoia">
+
+              <img src="../img/infografia-ia/principal.png" class="media-boceto-infoia">
+
+              <div class="texto-intro">
+                <h3>🔍📖 Concepto de la experiencia</h3>
+                <p>
+                  El proyecto consistió en el diseño de una infografía interactiva orientada a
+                  comunicar información compleja sobre inteligencia artificial de manera
+                  accesible, dinámica y participativa.
+                </p>
+
+                <p>
+                  La propuesta transforma datos y contenidos informativos en una experiencia de
+                  storytelling interactivo, donde el usuario explora distintos temas mediante
+                  scroll, interacción y decisiones propias.
+                </p>
+
+                <p>
+                  La navegación fue pensada como un recorrido vertical en el que el usuario
+                  avanza entre diferentes núcleos temáticos. Cada sección funciona como una
+                  unidad independiente, permitiendo profundizar en un tema o desplazarse entre
+                  contenidos sin un recorrido rígido, manteniendo siempre la continuidad de la
+                  experiencia.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- COMPONENTES -->
+            <h3>Sistema de componentes interactivos</h3>
+            <p>
+              Mi trabajo se centró en el diseño de un sistema de componentes interactivos
+              reutilizables que organiza la información y marca el ritmo de la experiencia.
+              A través de módulos como mini juegos, carruseles y galerías, el contenido se presenta
+              de forma progresiva, incentivando la exploración sin generar sobrecarga de información.
+            </p>
+
+
+            <div class="media-row media-row-3">
+              <!-- MINI JUEGO -->
+              <div class="media-item">
+
+                <img src="../img/infografia-ia/vof.jpg" alt="Mini juego verdadero o falso con información progresiva">
+
+                <p><b>Mini juego: Verdadero o falso</b></p>
+
+                <p>
+                  El mini juego de verdadero o falso fue diseñado como una herramienta de
+                  aprendizaje activo. Al interactuar con las cartas, se despliega una ventana
+                  informativa donde los contenidos se desbloquean gradualmente mediante
+                  elementos visuales animados.
+                </p>
+
+              </div>
+
+              <!-- CARRUSEL -->
+              <div class="media-item">
+
+                <img src="../img/infografia-ia/carrusel.jpg" alt="Carrusel interactivo con ejemplos de uso de IA">
+
+                <p><b>Carrusel interactivo</b></p>
+
+                <p>
+                  Se diseñó un carrusel de logos interactivo que permite acceder a información
+                  contextual y ejemplos concretos de aplicación de la inteligencia artificial.
+                </p>
+
+              </div>
+
+              <!-- GALERÍA -->
+              <div class="media-item">
+
+                <img src="../img/infografia-ia/galeria.jpg" alt="Galería interactiva de obras generadas con IA">
+
+                <p><b>Módulo tipo galería</b></p>
+
+                <p>
+                  El módulo de galería presenta obras generadas con IA, donde al seleccionar
+                  una pieza se despliega información lateral sin interrumpir el flujo principal.
+                </p>
+
+              </div>
+            </div>
+
+
+            <div class="media-row media-row-3">
+              <div class="media-item">
+
+                <img src="../img/infografia-ia/principal - copia.png" alt="Componente de menu con feedback al usuario"
+                  style=" width:100%; max-height:none; max-width:none;">
+
+                <p><b>Menú de navegación</b></p>
+
+                <p>
+                  Este componente permite al usuario elegir el tema que desea explorar.
+                  Los tres cuadros iniciales muestran ilustraciones y títulos; al hacer
+                  hover se resalta el cuadro, y al hacer clic, el scroll lleva al usuario directamente
+                  al tema seleccionado, facilitando la exploración libre dentro del storytelling.
+                </p>
+
+              </div>
+
+              <div class="media-item">
+                <img src="../img/infografia-ia/robot.jpg" alt="Robot interactivo con distintos estados y animaciones">
+
+                <p><b>Personaje interactivo</b></p>
+
+                <p>
+                  Diseñé un personaje interactivo que funciona como guía sutil dentro de la
+                  experiencia. El robot acompaña al usuario con intervenciones breves,
+                  sugerencias y preguntas reflexivas.
+                </p>
+
+                <p>
+                  Se trabajaron distintos estados animados (saludo, indicador de interacción,
+                  estados inactivos) cuidando que su presencia no resulte invasiva.
+                </p>
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/infografia-ia/valoracion.jpg" alt="Componente de valoración con feedback al usuario">
+
+                <p><b>Valoración y feedback</b></p>
+
+                <p>
+                  Al finalizar cada núcleo informativo se incorporó un componente de valoración
+                  que permite al usuario expresar su opinión y recibir información contextual
+                  respaldada por fuentes.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="bloque-boceto-infoia">
+
+              <img src="../img/infografia-ia/cuadro.png" class="media-boceto-infoia">
+
+              <div class="texto-intro">
+                <h3>☝🤓 Aprendizajes y resultados</h3>
+                <p> Este proyecto permitió trabajar simultáneamente en dimensiones conceptuales,
+                  técnicas y de experiencia de usuario. Más allá del diseño visual y narrativo, fue
+                  necesario coordinar la interacción de los componentes, micro-animaciones y feedback
+                  para lograr un flujo coherente y atractivo. </p>
+                <p> La experiencia integró distintas
+                  áreas del diseño interactivo: storytelling, arquitectura de información, micro-interacciones
+                  y exploración por scroll. Además, implicó pensar en la reutilización de componentes,
+                  la consistencia visual y la respuesta del sistema a las decisiones del usuario. </p>
+                <p> El resultado final es una infografía interactiva dinámica, accesible y participativa,
+                  donde la información se comunica de forma clara y progresiva, fomentando la exploración
+                  libre del usuario y consolidando un sistema robusto de interacción y narrativa visual. </p>
+
+              </div>
+
+            </div>
+
+            <h3>Documentación completa</h3>
+            <p class="docs-intro">
+              A continuación se incluyen algunos documentos utilizados durante el desarrollo
+              del proyecto, que muestran el proceso de investigación, construcción del
+              universo y diseño del dispositivo interactivo.
+            </p>
+            <div class="media-row media-row-3">
+
+              <div class="media-item">
+                <p><b>Exploración de fuentes</b></p>
+                <p>
+                  Documento de fuentes donde se exploran los sitios de dónde sacamos
+                  la información de nuestro trabajo. A partir de estas hipótesis se comienza
+                  a construir el punto de partida conceptual de la infografia.
+                </p>
+                <div class="pdfs">
+                  <details>
+
+                    <summary>📄 Fuentes de los datos</summary>
+
+
+
+                    <a href="../docs/projects/infografia-ia/fuentes.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <br>
+                    <iframe src="../docs/projects/infografia-ia/fuentes.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+              <!-- WEB -->
+              <div class="media-item">
+
+                <p><b>Sitio web interactivo</b></p>
+
+                <p>
+                  El proyecto fue llevado a una versión web funcional que permite experimentar
+                  la infografía con scroll narrativo, interacciones y animaciones, reflejando
+                  el comportamiento de los componentes diseñados.
+                </p>
+
+                <a class="figma-link" href="https://ramirojuarezgiacomo.github.io/Portfolio/web07/index.html"
+                  target="_blank">
+                  🌐 Ver infografía interactiva
+                </a>
+
+              </div>
+
+              <!-- FIGMA -->
+              <div class="media-item">
+
+                <p><b>Prototipo interactivo</b></p>
+
+                <p>
+                  El prototipo interactivo en Figma fue utilizado para definir flujos,
+                  transiciones y comportamiento de los componentes antes de la implementación.
+                </p>
+                <br>
+                <a class="figma-link"
+                  href="https://www.figma.com/proto/zv1ZEMuju1C8t1RpEdEGcO/2024-Taller-2-infografia?node-id=922-1167&t=x7TgerFX4xTTVGxh-1&scaling=scale-down-width&content-scaling=fixed&page-id=3%3A300&starting-point-node-id=922%3A1167"
+                  target="_blank">
+                  🔗 Ver prototipo en Figma
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- TP5 infobae -->
+        <section id="tp5" class="tab-content">
+
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Infobae</h2>
+
+              <p class="subtitle">
+                Rediseño UX de medio digital · Enfoque en componentes
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo (4 integrantes) · Taller de Diseño para la Web · 2024
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong> Diseño de componentes · Jerarquías visuales ·
+                Señales de interacción · Estados y feedback · Apoyo en prototipado (Figma)
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Rediseño UX de producto digital</i>
+                <i>Arquitectura de información</i>
+                <i>Sistema de componentes</i>
+                <i>Jerarquía y escaneo de contenido</i>
+                <i>Estados y feedback de interfaz</i>
+                <i>Wireframes y prototipado en Figma</i>
+              </p>
+            </div>
+
+
+
+            <div class="icon-sections">
+              <div class="icon-block">
+                <span class="icon">🎯</span>
+                <h3>Contexto y objetivo</h3>
+                <p>El proyecto consistió en el rediseño UX de <strong>Infobae</strong>,
+                  uno de los principales medios digitales de Argentina. El objetivo fue
+                  mejorar la experiencia de lectura y exploración en un contexto de alto
+                  volumen de información.</p>
+              </div>
+              <div class="icon-block">
+                <span class="icon">⚠️</span>
+                <h3>Problema</h3>
+                <p>La gran cantidad de noticias y actualizaciones constantes genera ruido
+                  visual y dificulta la identificación rápida de temas relevantes,
+                  afectando la comprensión y navegación del usuario.</p>
+              </div>
+              <div class="icon-block">
+                <span class="icon">🔍</span>
+                <h3>Enfoque de mi aporte</h3>
+                <p> Mi trabajo se centró en el diseño de <strong>componentes interactivos</strong>
+                  y en la definición de jerarquías claras, priorizando la comprensión del
+                  contenido por sobre lo estético. Se trabajaron señales visuales, estados
+                  e interacciones para guiar al usuario y reforzar la comunicación del sistema.</p>
+
+              </div>
+            </div>
+
+
+            <!-- WIREFRAMES -->
+            <h3>Wireframes</h3>
+            <div class="media-row media-row-3">
+              <div class="media-item">
+
+                <img src="../img/infobae/wireframe/wireframe00.png"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Componente de tendencias</b></p>
+                <p>Diseñé el componente de tendencias en la home para que sea interactivo, esta pensado para mostrar de
+                  forma breve el tema más votado.
+                  Al interactuar con el componente (hovers), se despliega una ventana por debajo que muestra la noticia
+                  más vista o votada.
+                  El objetivo fue ofrecer información relevante sin sobrecargar la pantalla.</p>
+              </div>
+
+              <div class="media-item">
+
+                <img src="../img/infobae/wireframe/wireframe01.png"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Actualizaciones en vivo</b></p>
+                <p>Está sección la diseñé pensando en que cuando se lea un artículo el usuario puede seguir
+                  pendiente ante las actualizaciones en vivo en el lateral del articulo se muestra mientras
+                  aún se hace scroll. Se descartó por peso visual.</p>
+
+              </div>
+
+              <div class="media-item">
+                <img src="../img/infobae/wireframe/wireframe02.png"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Ranking de opiniones</b></p>
+                <p>Se muestra los comienzos del diseño sobre lo que la gente más quiere o odia, mostrando sus
+                  porcentajes.</p>
+              </div>
+            </div>
+
+            <div class="media-row media-row-2">
+
+              <div class="media-item">
+                <img src="../img/infobae/wireframe/wireframe03.png"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Noticias por temática</b></p>
+                <p>En las noticias por temática trabajé la jerarquización de la información, con datos
+                  como cantidad de artículos, fecha de actualización y reacciones totales. El objetivo
+                  fue facilitar una lectura rápida del impacto y la relevancia del tema, permitiendo al
+                  usuario decidir si profundizar o no en ese contenido.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/infobae/wireframe/wireframe04.png"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Valoración de artículos</b></p>
+                <p>El componentede de valoración fue pensado no solo como una acción de voto, sino como ver la
+                  cantidad de usuarios que interactúan y comparten su pensamiento sobre tal artículo.
+                  Inicia en estado neutro y al ser activado, cambia de color para indicar el estado seleccionado.
+                  El voto puede revertirse, volviendo al estado inicial, lo que le otorga mayor control y claridad
+                  al usuario.</p>
+              </div>
+
+
+            </div>
+
+            <a class="figma-link" href="https://www.figma.com/proto/b0t7w1YvkuOWaM4I78B8PJ/tp2TM2?node-id=8-6143"
+              target="_blank">
+              🔗 Ver wireframes interactivos en Figma
+            </a>
+
+            <!-- MOCKUPS -->
+            <h3>Mockups</h3>
+
+            <div class="media-row media-row-2">
+
+              <div class="media-item">
+                <img src="../img/infobae/mockup/mockup00.png" style="height: 400px;"
+                  alt="Componente de votación con estados e interacción">
+                <p><b>Valoración de artículos</b></p>
+                <p>Al final de cada artículo diseñé el componente de valoración mediante acciones de “me gusta” y “no me
+                  gusta”, pensado no solo como una acción de voto sino también como un canal de feedback hacia el
+                  usuario. Al interactuar, el sistema confirma la acción mediante cambios de color y mensajes
+                  contextuales que indican si el voto fue registrado o si el usuario expresó disconformidad con el
+                  contenido.
+
+                  El componente inicia en un estado neutro y, al ser activado, cambia visualmente para indicar la
+                  selección realizada. Además, el voto puede revertirse y volver al estado inicial, lo que le otorga
+                  mayor control al usuario y mantiene una experiencia flexible y comprensible durante la lectura.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/infobae/mockup/mockup01.png" style="height: 400px;">
+                <p><b>Top interactivo</b></p>
+                <p>Diseñé el componente de top presente en la home como un sistema interactivo de lectura rápida pensado
+                  para mostrar de forma breve las opiniones de los usuarios. Al interactuar con el componente (hover),
+                  se despliega una ventana lateral que informa cuál es el contenido más votado y el más rechazado,
+                  utilizando indicadores visuales como iconos y barras de valoración que refuerzan la comparación entre
+                  resultados.
+                  <br>
+                  El objetivo fue ofrecer información relevante sin sobrecargar la pantalla, aplicando una interacción
+                  progresiva que revela datos solo cuando el usuario lo necesita. A nivel de prototipado, el componente
+                  fue construido conectando múltiples nodos en Figma para simular sus distintos estados, cuidando
+                  especialmente distancias, tamaños tipográficos y alineaciones para mantener consistencia visual dentro
+                  de una lista extensa de contenido.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="media-row media-row-2">
+
+              <div class="media-item">
+                <img src="../img/infobae/mockup/mockup02.png" alt="Componente de votación con estados e interacción">
+                <p><b>Estadísticas del artículo</b></p>
+                <p>En los artículos particulares contienen estadísticas de los mismo, como su posición,
+                  si es que se encuentra dentro del top, las visualizaciones, las reacciones y las veces
+                  que se compartió, todo en relación a ese tema, para que el usuario no solo se quede con
+                  la noticia leída si no que también obtenga una información mas precisa de lo que se habla
+                  y tiene relevancia en el país.</p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/infobae/mockup/mockup03.png" alt="Componente de votación con estados e interacción">
+                <p><b>Sección de noticias por temática</b></p>
+                <p>En las noticias por temática trabajé el diseño visual y la jerarquización de la información,
+                  buscando destacar rápidamente los temas de mayor relevancia, con una imagen representativa y el
+                  nombre de la persona asociada a la temática con datos como cantidad de artículos, visualizaciones
+                  y reacciones totales. El objetivo fue facilitar una lectura rápida del impacto y la relevancia del
+                  tema, permitiendo al usuario decidir si profundizar o no en ese contenido.</p>
+              </div>
+
+            </div>
+
+            <a class="figma-link" href="https://www.figma.com/proto/b0t7w1YvkuOWaM4I78B8PJ/tp2TM2?node-id=8-3932"
+              target="_blank">
+              🔗 Ver prototipo interactivo en Figma
+            </a>
+
+            <h3>👓 Aprendizajes</h3>
+            <p>
+              Este proyecto permitió profundizar en el diseño de componentes dentro de
+              un sistema de información complejo, donde la claridad y la jerarquía
+              visual resultan fundamentales para la lectura. Trabajar sobre un medio
+              digital con gran volumen de contenido implicó pensar la interfaz desde
+              la lógica del escaneo y la exploración rápida, priorizando señales
+              visuales y estados que guíen al usuario sin sobrecargar la pantalla.
+            </p>
+
+            <p>
+              A lo largo del proceso se exploraron distintas formas de presentar
+              información de manera progresiva, utilizando componentes interactivos
+              que revelan contenido solo cuando el usuario lo necesita. El trabajo
+              en equipo y el prototipado en Figma también permitieron validar
+              decisiones de diseño y ajustar la interacción antes de llegar a
+              la propuesta final.
+            </p>
+
+
+            <!-- PDF -->
+            <div class="pdfs">
+              <h3>Documentación del proyecto</h3>
+
+              <details>
+                <summary>📄 Memoria descriptiva del proyecto</summary>
+                <a href="../docs/projects/infobae/infobae.pdf" target="_blank">
+                  Abrir PDF →
+                </a>
+                <iframe src="../docs/projects/infobae/infobae.pdf"></iframe>
+              </details>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- TP6 indiehoy -->
+        <section id="tp6" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Indie Hoy – Landing Page</h2>
+
+              <p class="subtitle">
+                Rediseño UX/UI · Landing page responsive
+              </p>
+
+              <p class="meta">
+                Proyecto individual · Diseño UX/UI · 2024
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong> Investigación UX · User personas · Benchmarking ·
+                Wireframes · Diseño UI · Prototipado (Mobile & Desktop)
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Investigación UX</i>
+                <i>User personas</i>
+                <i>Benchmarking</i>
+                <i>Arquitectura de información</i>
+                <i>Wireframes y prototipado en Figma</i>
+                <i>Diseño responsive (Mobile & Desktop)</i>
+              </p>
+            </div>
+
+            <div class="icon-sections">
+              <div class="icon-block">
+                <span class="icon">🎯</span>
+                <h3>Contexto y objetivo</h3>
+                <p>
+                  Rediseño de la landing page de <strong>Indie Hoy</strong>, medio digital de música, cine, cultura y
+                  arte. El objetivo fue crear una página clara y atractiva que comunique el valor del medio y motive a
+                  sus usuarios a suscribirse al newsletter.
+                </p>
+              </div>
+              <div class="icon-block">
+                <span class="icon">⚠️</span>
+                <h3>Problema</h3>
+                <p>
+                  Muchos medios digitales no comunican de forma inmediata su propuesta de valor. El desafío fue
+                  organizar la información, reducir sobrecarga visual y guiar al usuario hacia la acción principal
+                  (suscripción), tanto en mobile como en desktop.
+                </p>
+              </div>
+              <div class="icon-block">
+                <span class="icon">🔍</span>
+                <h3>Investigación UX</h3>
+                <p>
+                  El proceso comenzó con una investigación exploratoria del medio y su contexto.
+                  Se realizó un <strong>moodboard</strong> para definir el estilo visual,
+                  analizando tipografías, paletas de color, componentes e interacciones presentes
+                  en la identidad de Indie Hoy.
+                </p>
+
+              </div>
+            </div>
+
+
+
+            <div class="bloque-boceto-indiehoy">
+              <div class="texto-intro">
+                <h3>Concepto visual</h3>
+                <p>
+                  Como punto de partida se desarrolló un <strong>moodboard</strong> para
+                  definir el estilo visual de la landing. Se analizaron tipografías,
+                  paletas de color, imágenes y componentes presentes en la identidad
+                  del medio para construir una propuesta coherente con Indie Hoy.
+                </p>
+
+                <p>
+                  La landing fue diseñada para destacar el beneficio principal del
+                  medio: el <strong>newsletter personalizado</strong>. A partir de este
+                  objetivo se organizaron las secciones y llamados a la acción para
+                  comunicar claramente el valor del contenido e incentivar la
+                  suscripción del usuario.
+                </p>
+
+              </div>
+              <img src="../img/indiehoy/moodboard.png" class="media-boceto-indiehoy">
+            </div>
+
+
+            <h3>Proceso de diseño</h3>
+            <div class="media-row-2">
+
+              <div class="media-item">
+                <img src="../img/indiehoy/userperson01.png" style="height: 300px;">
+                <p><b>User persona</b></p>
+                <p>
+                  Se desarrollaron tres perfiles de usuario para comprender necesidades,
+                  frustraciones e intereses. Esto permitió tomar decisiones de diseño
+                  más fundamentadas y centradas en el usuario.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/indiehoy/benchmark.png" style="height: 300px;">
+                <p><b>Benchmarking</b></p>
+                <p>
+                  Se analizaron medios como Level Up y Cinéfilos para identificar
+                  patrones de navegación, jerarquización de contenido y recursos
+                  como sistemas de etiquetas y organización de entrevistas.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/indiehoy/wireframes.png" style="height: 300px;">
+                <p><b>Wireframes</b></p>
+                <p>
+                  A partir de la investigación, se desarrollaron wireframes iniciales
+                  para las versiones mobile y desktop, definiendo la estructura general
+                  de la landing.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/indiehoy/mockwire.png" style="height: 300px;">
+                <p><b>De wireframe a diseño final</b></p>
+                <p>
+                  Los wireframes se transformaron en el diseño visual final, incorporando
+                  tipografía, color y jerarquía visual. El objetivo fue comunicar la propuesta
+                  del medio y destacar el beneficio principal para el usuario: el newsletter
+                  personalizado.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="bloque-boceto-indiehoy">
+              <div class="texto-intro">
+                <h3>👓 Aprendizajes</h3>
+                <p>
+                  Este proyecto permitió trabajar el proceso completo de diseño UX/UI, desde la
+                  investigación inicial hasta el desarrollo de wireframes y prototipos
+                  interactivos. A lo largo del proceso fue clave organizar la información de
+                  forma clara y definir una jerarquía visual que ayudara a comunicar el valor
+                  del medio y orientar al usuario hacia la suscripción al newsletter.
+                </p>
+
+                <p>
+                  La investigación mediante user personas y benchmarking permitió comprender
+                  mejor a los posibles lectores del medio y detectar patrones de diseño
+                  utilizados en otros sitios culturales. Esto ayudó a fundamentar decisiones
+                  como la organización del contenido, la simplificación de la navegación y la
+                  priorización de llamados a la acción.
+                </p>
+
+                <p>
+                  El proyecto también permitió profundizar en el diseño responsive,
+                  adaptando la estructura y los componentes para que la experiencia funcione
+                  correctamente tanto en mobile como en desktop, manteniendo coherencia visual
+                  y funcional entre ambas versiones.
+                </p>
+              </div>
+
+              <img src="../img/indiehoy/final.png" class="media-boceto-indiehoy">
+
+            </div>
+
+
+            <h3>Prototipos y documentación</h3>
+            <div class="media-row media-row-3">
+
+              <!-- web -->
+              <div class="media-item">
+
+                <p><b>Versión Desktop</b></p>
+
+                <p>
+                  En desktop se aprovechó la mayor resolución para ampliar banners,
+                  mostrar más contenido en simultáneo y reorganizar los elementos de forma horizontal,
+                  manteniendo coherencia con la versión mobile.
+                </p>
+
+                <a class="figma-link"
+                  href="https://www.figma.com/proto/ClxVZi9eXB5mWUTaK7FYG0/TP1_TM2?node-id=4178-847&t=grNrnQd713Qn6RGh-1"
+                  target="_blank">
+                  🔗 Ver prototipo Desktop
+                </a>
+              </div>
+
+              <!-- mobile -->
+              <div class="media-item">
+
+                <p><b>Versión Mobile</b></p>
+
+                <p>
+                  En mobile se priorizó una lectura rápida y escaneable. Se utilizaron carruseles
+                  para noticias y entrevistas, iconografía clara para explicar beneficios
+                  y un formulario progresivo que habilita el CTA solo cuando los datos están completos.
+                </p>
+
+                <a class="figma-link"
+                  href="https://www.figma.com/proto/ClxVZi9eXB5mWUTaK7FYG0/TP1_TM2?node-id=4177-1333&starting-point-node-id=4177%3A1333&t=WWDm02EGpLg6vj9D-1"
+                  target="_blank">
+                  🔗 Ver prototipo Mobile
+                </a>
+
+              </div>
+
+              <!-- DOCUMENTOS -->
+              <div class="media-item">
+
+                <p><b>Documentación del proyecto</b></p>
+
+                <p>
+                  Documento que reúne el proceso completo de trabajo: investigación UX,
+                  análisis de referencias, desarrollo de user personas, wireframes y
+                  decisiones de diseño aplicadas en la propuesta final.
+                </p>
+                <div class="pdfs">
+                  <details>
+                    <summary>📄 Ver memoria descriptiva</summary>
+                    <a href="../docs/projects/indiehoy/indiehoy.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/indiehoy/indiehoy.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- TP7 despintado -->
+        <section id="tp7" class="tab-content">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Despintado</h2>
+
+              <p class="subtitle">
+                Videojuego interactivo · Instalación lúdica · Shooter experimental
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo · Taller de Diseño Multimedial 1 · 2023
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong>
+                Programación en Unity · Diseño de feedback e interacción ·
+                Integración de ilustraciones y sonido · Diseño e implementación de HUD ·
+                Resolución de problemas técnicos · Asistencia al desarrollo general ·
+                Apoyo en arquigrafía y armado del dispositivo físico
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Diseño de interacción en videojuegos</i>
+                <i>Feedback visual y sistémico</i>
+                <i>Diseño de HUD</i>
+                <i>Tutorial y comprensión de mecánicas</i>
+                <i>Testing en instalación física</i>
+                <i>Iteración de gameplay</i>
+              </p>
+            </div>
+
+            <div class="bloque-boceto-despintado">
+
+              <img src="../img/despintado/general.jpg" alt="Vista general del juego Despintado"
+                class="media-boceto-despintado">
+
+
+              <div class="texto-intro">
+                <h3>🔍📖 Sobre el proyecto</h3>
+                <p>
+                  <strong>Despintado</strong> Despintado es un videojuego interactivo
+                  desarrollado en Unity, inspirado en la obra Huyendo de la crítica de
+                  Pere Borrell. La experiencia funciona como una metáfora lúdica sobre
+                  la exposición pública, las críticas negativas y su impacto emocional.
+                </p>
+
+                <p>
+                  El jugador controla a Víctor, quien debe defenderse de una horda de “haters”
+                  que intentan publicar comentarios dañinos. Para hacerlo utiliza el <strong>Pinceltrón 3000</strong>,
+                  un arma que dispara pintura, la cual funciona tanto como munición como vida.
+                </p>
+                <p>
+                  La mecánica principal consiste en resistir oleadas de enemigos, evitar la publicación
+                  de comentarios negativos y derrotar al jefe final. El proyecto buscó crear una
+                  experiencia clara y accesible, donde el jugador entienda las reglas y consecuencias
+                  de sus acciones a través del feedback visual, sonoro y sistémico.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="media-row media-row-2 media-row-juego">
+              <div class="media-item">
+                <img src="../img/despintado/hud.jpg" alt="HUD y mecánicas de juego">
+
+                <!-- MECÁNICAS -->
+                <h3>Mecánicas principales</h3>
+                <p>El juego se estructura como un shooter por oleadas en el que cada enemigo
+                  representa una crítica negativa. El jugador debe apuntar, disparar con su arma
+                  física, recargar pintura y administrar estratégicamente
+                  sus recursos, ya que la vida y la munición comparten el mismo sistema.
+                  A medida que avanzan las partidas, las oleadas de enemigos se vuelven
+                  progresivamente más intensas hasta culminar en un enfrentamiento final
+                  contra un jefe.</p>
+              </div>
+              <div class="media-item">
+                <video controls muted playsinline>
+                  <source src="../img/despintado/feedback.mp4" type="video/mp4">
+                </video>
+                <!-- FEEDBACK -->
+                <h3>Feedback e interacción</h3>
+                <p>
+                  Uno de mis principales aportes fue el diseño de feedback claro para que el jugador
+                  comprenda de inmediato el efecto de sus acciones. Para ello se implementaron
+                  respuestas visuales y sistémicas que refuerzan la lectura del juego y evitan
+                  confusión durante el ritmo acelerado de las partidas, como enemigos que cambian
+                  a rojo al recibir daño, enemigos especiales que titilan tres veces antes de morir,
+                  reducción progresiva de vida ante la aparición de comentarios y mensajes o alertas
+                  visuales que guían al jugador durante el tutorial.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="bloque-boceto-despintado">
+              <video class="media-boceto-despintado video" controls muted playsinline>
+                <source src="../img/despintado/gameplay.mp4" type="video/mp4">
+              </video>
+
+              <div class="texto-intro">
+                <h3>Implementación técnica y gameplay</h3>
+                <p>Durante el desarrollo surgieron dificultades técnicas al implementar la mecánica de
+                  los comentarios en pantalla que le quitan vida al jugador. Inicialmente el sistema utilizaba valores
+                  enteros, lo que generaba problemas de implementación. Como alternativa, propuse utilizar valores
+                  decimales para aplicar una pérdida de vida progresiva, solución que permitió destrabar el
+                  desarrollo y se mantuvo en la versión final del juego.</p>
+                <p>
+                  También participé en la implementación de sistemas de gameplay como el tutorial interactivo,
+                  la integración del HUD, la colocación de escenarios en el build final, la integración de enemigos y
+                  tweets.
+                  En el siguiente video se observa el funcionamiento del sistema de vida, la interacción con
+                  enemigos y el impacto de los comentarios durante la partida.</p>
+              </div>
+            </div>
+
+
+            <div class="bloque-boceto-despintado">
+
+              <img src="../img/despintado/arqui.jpg" alt="Dispositivo físico y stand" class="media-boceto-despintado">
+
+              <div class="texto-intro">
+                <!-- ARQUI -->
+                <h3>Arquigrafía y dispositivo físico</h3>
+                <p>
+                  El proyecto incluyó el diseño y armado de un dispositivo físico
+                  que funciona como controlador del juego.
+                  Ante fallas técnicas con los controles disponibles,
+                  facilité mi control de Wii y sensor, explicando su uso
+                  como mouse en PC para la correcta calibración del arma.
+                </p>
+                <p>
+                  También colaboré en tareas de maqueta, pintura, armado,
+                  empapelado y detalles generales del stand,
+                  además de asistir en el diseño del logo y su tipografía.
+                </p>
+              </div>
+            </div>
+
+            <h3>Experiencia en la muestra</h3>
+            <p>El proyecto fue presentado en una muestra académica donde el público pudo interactuar
+              directamente con el juego y el dispositivo físico. Durante la exhibición se realizaron
+              pruebas con usuarios en tiempo real, lo que permitió observar cómo los jugadores comprendían
+              las mecánicas, el sistema de vida y las respuestas visuales del juego.
+
+              La instalación combinaba el videojuego proyectado en pantalla con el controlador físico del
+              Pinceltrón 3000, generando una experiencia lúdica que integraba juego digital y participación
+              del público.</p>
+            <div class="media-row media-row-5">
+
+              <div class="media-item">
+                <video controls muted playsinline disablepictureinpicture
+                  style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+                  <source src="../img/despintado/muestra00.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="media-item">
+                <video controls muted playsinline disablepictureinpicture
+                  style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+                  <source src="../img/despintado/muestra01.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="media-item">
+                <video controls muted playsinline disablepictureinpicture
+                  style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+                  <source src="../img/despintado/muestra02.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="media-item">
+                <video controls muted playsinline disablepictureinpicture
+                  style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+                  <source src="../img/despintado/muestra04.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="media-item">
+                <video controls muted playsinline disablepictureinpicture
+                  style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+                  <source src="../img/despintado/muestra05.mp4" type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+
+
+
+            <video controls muted playsinline disablepictureinpicture
+              style="height:350px; width:100%; max-height:none; max-width:none; object-fit: cover;">
+              <source src="../img/despintado/muestra03.mp4" type="video/mp4">
+            </video>
+
+
+
+            <div class="bloque-boceto-despintado">
+              <img src="../img/despintado/final.jpeg" alt="Dispositivo físico y stand" class="media-boceto-despintado">
+
+              <div class="texto-intro">
+                <!-- ARQUIGRAFÍA -->
+                <h3>👓 Aprendizaje</h3>
+                <p>
+                  Este proyecto implicó trabajar en diseño, programación e interacción dentro de una experiencia que
+                  combinaba un videojuego con un dispositivo físico. El proceso incluyó el desarrollo de mecánicas de
+                  juego, resolución de problemas técnicos y ajustes en el sistema de feedback para mejorar la claridad
+                  de las acciones del jugador.
+                </p>
+                <p>
+                  La experiencia integró programación en Unity con diseño de interacción, desarrollo de HUD, tutoriales
+                  y sistemas de feedback visual. También incluyó una instalación física que funcionaba como controlador
+                  del juego, lo que implicó desafíos de calibración y de experiencia del jugador en un espacio
+                  expositivo.
+                </p>
+                <p>
+                  El proyecto se desarrolló de forma colaborativa, participando en el desarrollo del gameplay y en la
+                  integración de elementos visuales y técnicos. El proceso incluyó pruebas con usuarios y ajustes
+                  iterativos para mejorar la comprensión del juego.
+                </p>
+                <p>
+                  Despintado se planteó como una experiencia interactiva que combinó mecánicas lúdicas, crítica social e
+                  interfaces físicas para explorar cómo el diseño de interacción puede comunicar ideas y generar
+                  experiencias claras para el público.
+                </p>
+              </div>
+            </div>
+
+
+            <h3>Documentación y material del proyecto</h3>
+            <div class="media-row media-row-2">
+              <div class="media-item">
+                <!-- DOCUMENTOS -->
+                <div class="pdfs">
+                  <p class="resource-title">📄 Documentación</p>
+                  <p class="resource-text">
+                    El proyecto fue desarrollado en Unity como una experiencia interactiva funcional para su uso en
+                    contexto físico.
+                  </p>
+                  <details>
+                    <summary>📄 Presentación final</summary>
+                    <a href="../docs/projects/despintado/despintado.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/despintado/despintado.pdf"></iframe>
+                  </details>
+
+                  <details>
+                    <summary>📄 Exploración y bocetos</summary>
+                    <a href="../docs/projects/despintado/procesos.pdf" target="_blank">
+                      Abrir PDF →
+                    </a>
+                    <iframe src="../docs/projects/despintado/procesos.pdf"></iframe>
+                  </details>
+                </div>
+              </div>
+
+              <div class="media-item">
+
+                <!-- UNITY -->
+                <p class="resource-title">🕹️ Experiencia Unity</p>
+                <p class="resource-text">
+                  El proyecto fue desarrollado en Unity como una experiencia interactiva funcional para su uso en
+                  contexto físico.
+                </p>
+                <a class="figma-link"
+                  href="https://drive.google.com/drive/folders/1m7rZXjf3viI5zT0ZH9nnQLSxUiee3Oqv?usp=sharing"
+                  target="_blank">
+                  ⬇️ Descargar ejecutable
+                </a>
+
+                <a class="figma-link" href="https://ramirojuarezg.itch.io/despintado" target="_blank">
+                  🎮 Probar la experiencia
+                </a>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </section>
+
+        <!-- MINICARE -->
+        <section id="tp8" class="tab-content active">
+          <div class="text-block">
+            <div class="project-info">
+              <h2>Minicare</h2>
+
+              <p class="subtitle">
+                App de gestión de salud infantil · Proyecto académico
+              </p>
+
+              <p class="meta">
+                Trabajo en equipo (3 integrantes) · Taller de Diseño Multimedial · 2023
+              </p>
+
+              <p class="meta role-meta">
+                <strong>Mi rol:</strong> Investigación UX · Benchmarking · Análisis de patrones ·
+                Diseño de componentes · Apoyo en prototipado (Figma)
+              </p>
+
+              <p class="meta meta-ux">
+                <strong>UX/UI:</strong>
+                <i>Investigación y benchmarking de aplicaciones</i>
+                <i>Análisis de patrones de diseño UX</i>
+                <i>Organización y jerarquía de la información</i>
+                <i>Diseño de navegación y flujos de usuario</i>
+                <i>Wireframes y prototipado en Figma</i>
+                <i>Diseño de componentes y consistencia visual</i>
+              </p>
+            </div>
+
+
+            <div class="icon-sections-2">
+              <div class="icon-block">
+                <span class="icon">🎯</span>
+                <h3>Contexto y objetivo</h3>
+                <p>
+                  Minicare surge a partir del análisis de aplicaciones orientadas al cuidado
+                  y seguimiento de la salud infantil. El objetivo fue identificar oportunidades
+                  de mejora en la organización de la información y proponer una interfaz clara,
+                  accesible y confiable para padres y tutores.
+                </p>
+              </div>
+              <div class="icon-block">
+                <span class="icon">⚠️</span>
+                <h3>Problema</h3>
+                <p>
+                  Muchas apps del rubro presentan interfaces sobrecargadas, flujos poco claros
+                  y exceso de información en una misma pantalla, lo que dificulta el seguimiento
+                  de turnos médicos, vacunas e historial clínico.
+                </p>
+              </div>
+
+            </div>
+
+
+            <h3>Investigación UX</h3>
+            <p>
+              Realicé una búsqueda y análisis de distintas aplicaciones similares, comparando sus estructuras
+              de pantalla, funcionalidades y patrones de uso. A partir de este estudio se identificaron
+              constantes, variables, fortalezas y debilidades de cada solución. Como principal aporte,
+              analicé patrones de diseño recurrentes (navegación por tabs, el uso de colores de
+              estado y la jerarquía visual) que luego sirvieron como base para la propuesta de la app.
+            </p>
+            <div class="media-row-2" style="margin-top: 0;">
+
+              <div class="media-item">
+                <img src="../img/minicare/1-1.png" alt="Benchmark de aplicaciones" style="height: 300px;">
+                <p>
+                  Se analizaron aplicaciones similares comparando estructura de pantallas,
+                  funcionalidades y organización de la información para detectar
+                  fortalezas y debilidades.
+                </p>
+              </div>
+
+              <div class="media-item">
+                <img src="../img/minicare/3.png" alt="Análisis de patrones UX" style="height: 300px;">
+                <p>
+                  A partir del benchmark se identificaron patrones recurrentes como
+                  navegación por tabs, uso de colores de estado y jerarquía visual,
+                  que sirvieron como base para el diseño de la propuesta.
+                </p>
+              </div>
+
+            </div>
+
+
+
+            <div class="bloque-boceto">
+              <img src="../img/minicare/userperson.png" class="media-boceto"
+                style="height:400px; width:100%; max-height:none; max-width:none;">
+              <div class="texto-intro">
+                <h3>Brand persona</h3>
+                <p>
+                  A partir de entrevistas y la observación de patrones de uso, se identificaron
+                  necesidades recurrentes de padres y tutores al gestionar información médica infantil.
+                  Con base en estos insights se desarrolló el brand persona, que guió las decisiones de
+                  diseño durante el proyecto. Mi participación consistió en identificar puntos clave,
+                  necesidades repetidas, comportamientos y expectativas comunes en las entrevistas,
+                  aportando al análisis que permitió al equipo elaborar la redacción final del brand persona.
+                </p>
+
+              </div>
+            </div>
+
+
+            <h3>Proceso de diseño</h3>
+            <p>
+              El proceso de diseño se desarrolló en dos etapas. En una primera instancia
+              se trabajaron wireframes interactivos para definir la estructura general
+              de la app y los flujos principales. Posteriormente, se desarrolló un
+              prototipo de alta fidelidad incorporando identidad visual, tipografía,
+              colores e iconografía.
+            </p>
+            <div class="proceso-grid">
+
+              <img src="../img/minicare/wireframe.png" class="proceso-img">
+              <img src="../img/minicare/mockup.png" class="proceso-img">
+              <img src="../img/minicare/mockup2.png" class="proceso-img">
+
+              <div class="proceso-texto1">
+                <p>
+                  Los wireframes permitieron definir y validar la estructura general de la app,
+                  la organización y jerarquía de la información, así como los flujos principales
+                  y la navegación antes de avanzar al diseño visual final.
+                </p>
+
+                <a class="figma-link"
+                  href="https://www.figma.com/proto/SZ9HmRQIuTOoL0Si7reKRh/GRUPO-8-tema-1--Copia-?node-id=342-25463&p=f&t=UMIJ3Vw5MRJJTgmO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=342%3A25463">
+                  🔗 Ver wireframes
+                </a>
+              </div>
+
+              <div class="proceso-texto2">
+                <p>
+                  En el prototipo final se trabajó una estética amigable y familiar,
+                  priorizando la claridad y la consistencia visual. Para lograrlo,
+                  se incorporaron tipografía, iconografía y componentes reutilizables
+                  como botones y cards que mantienen la coherencia a lo largo de
+                  toda la interfaz.
+                </p>
+
+                <a class="figma-link"
+                  href="https://www.figma.com/proto/cA9t7RN12ulSNStebgg5CD/TP3.2--Copia-?node-id=593-857&p=f&t=7piTXbSJFcyNcbYg-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A4653&starting-point-node-id=593%3A857">
+                  🔗 Ver prototipo final
+                </a>
+              </div>
+
+            </div>
+
+            <h3>👓 Aprendizajes</h3>
+
+            <p>
+              Este proyecto permitió trabajar el proceso de diseño UX aplicado a una
+              problemática concreta dentro del ámbito de la salud. A partir del análisis
+              de aplicaciones existentes fue posible identificar patrones de uso,
+              fortalezas y debilidades en la organización de la información y en la
+              navegación de las interfaces.
+            </p>
+
+            <p>
+              El benchmarking y el análisis de patrones de diseño ayudaron a comprender
+              cómo diferentes aplicaciones resuelven tareas similares, como la creación
+              de perfiles familiares, el registro de información médica y el seguimiento
+              de vacunas o controles pediátricos. Estos hallazgos sirvieron como base
+              para definir decisiones de diseño orientadas a simplificar los flujos y
+              mejorar la claridad de la interfaz.
+            </p>
+
+            <p>
+              El proceso también permitió profundizar en la importancia de la jerarquía
+              visual, la consistencia de componentes y la organización de la información
+              en aplicaciones con gran cantidad de datos. A través de wireframes y
+              prototipos interactivos se exploraron distintas formas de estructurar
+              las pantallas para facilitar la gestión de información médica infantil
+              de forma clara y confiable para padres y tutores.
+            </p>
+
+
+            <!-- PDFs -->
+            <div class="pdfs">
+              <h3>Documentación del proyecto</h3>
+
+              <details>
+                <summary>📄 Investigación UX y benchmarking</summary>
+                <a href="../docs/projects/minicare/ux-research-benchmark.pdf" target="_blank">
+                  Abrir PDF →
+                </a>
+                <iframe src="../docs/projects/minicare/ux-research-benchmark.pdf"></iframe>
+              </details>
+
+              <details>
+                <summary>📄 Análisis de patrones de diseño</summary>
+                <a href="../docs/projects/minicare/ux-patterns-analysis.pdf" target="_blank">
+                  Abrir PDF →
+                </a>
+                <iframe src="../docs/projects/minicare/ux-patterns-analysis.pdf"></iframe>
+              </details>
+
+              <details>
+                <summary>📄 Brand persona</summary>
+                <a href="../docs/projects/minicare/brand-persona.pdf" target="_blank">
+                  Abrir PDF →
+                </a>
+                <iframe src="../docs/projects/minicare/brand-persona.pdf"></iframe>
+              </details>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+  </main>
+
+  <script src="../js/interfaz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
