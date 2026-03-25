@@ -11,6 +11,73 @@ body {
   overflow-x: hidden;
 }
 
+/* cargando pantalla */
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+  z-index: 9999;
+}
+
+/* CENTRO */
+.loader-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loader-center h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.loader-center p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* BARRA */
+.progress-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(255,255,255,0.2);
+  overflow: hidden;
+  margin: auto;
+}
+
+.progress {
+  width: 40%;
+  height: 100%;
+  background: white;
+  position: relative;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+/* FOOTER */
+.loader-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* PANTALLA DE CARGA */
+
 
 /* FONDOS DE LAS TABS */
 
