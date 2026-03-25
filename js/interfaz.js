@@ -220,3 +220,31 @@ document.addEventListener("click", (e) => {
 
   window.open(img.src, "_blank"); 
 });
+
+
+/* cargando */
+
+const messages = [
+  "Cargando recursos",
+  "Inicializando módulos",
+  "Renderizando interfaz",
+  "Sincronizando sistema",
+  "Casi listo"
+];
+
+let i = 0;
+const text = document.getElementById("loading-text");
+
+setInterval(() => {
+  text.textContent = messages[i % messages.length];
+  i++;
+}, 1200);
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  loader.classList.add("fade-out");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
+});
